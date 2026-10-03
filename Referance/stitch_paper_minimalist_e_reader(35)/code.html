@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;1,7..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"surface-tint": "#615e5a", "inverse-on-surface": "#f2f0ed", error: "#ba1a1a", "on-secondary-fixed-variant": "#7f2b08", "surface-container-low": "#f5f3ef", primary: "#040302", "tertiary-container": "#241c17", "on-primary-fixed": "#1d1b18", "secondary-fixed-dim": "#ffb59c", "outline-variant": "#cdc5bc", "surface-bright": "#fbf9f5", surface: "#fbf9f5", "surface-container-lowest": "#ffffff", "inverse-primary": "#cbc6c1", "primary-fixed": "#e7e1dc", outline: "#7c766e", "inverse-surface": "#30312e", "surface-container-high": "#eae8e4", "on-error-container": "#93000a", "secondary-container": "#ff8c62", "surface-variant": "#e4e2de", tertiary: "#070301", "primary-container": "#1f1d1a", "on-primary-container": "#898580", "on-primary": "#ffffff", "on-tertiary-fixed-variant": "#4f453e", "on-surface-variant": "#4a463f", "surface-container": "#efeeea", "on-tertiary-fixed": "#221a15", "on-surface": "#1b1c1a", secondary: "#9e421e", "on-error": "#ffffff", "on-primary-fixed-variant": "#494643", "on-secondary-fixed": "#380c00", "tertiary-fixed-dim": "#d3c3bb", "surface-dim": "#dbdad6", "secondary-fixed": "#ffdbcf", "surface-container-highest": "#e4e2de", "on-tertiary": "#ffffff", "error-container": "#ffdad6", "primary-fixed-dim": "#cbc6c1", "tertiary-fixed": "#f0dfd6", "on-secondary-container": "#752402", "on-tertiary-container": "#90837b", "on-secondary": "#ffffff", "on-background": "#1b1c1a", background: "#fbf9f5"}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}, spacing: {"space-xl": "2rem", "margin-desktop-reading": "auto", "gutter-mobile": "1rem", "margin-mobile": "1rem", "space-sm": "0.5rem", "space-md": "1rem", "space-xs": "0.25rem", gutter: "1.5rem", "space-2xl": "3rem", "space-lg": "1.5rem", margin: "2rem"}, fontFamily: {"label-md": ["Inter"], "headline-xl": ["Literata"], "headline-xl-mobile": ["Literata"], "headline-sm": ["Literata"], "headline-lg-mobile": ["Literata"], "body-reading-md": ["Literata"], "ui-body": ["Inter"], "headline-lg": ["Literata"], "ui-body-strong": ["Inter"], "label-sm": ["Inter"], "headline-md": ["Literata"], "body-reading-lg": ["Literata"], "label-lg": ["Inter"], "body-reading-sm": ["Literata"], headline: ["Literata"], display: ["Literata"], body: ["Literata"], label: ["Inter"]}, fontSize: {"label-md": ["12px", {lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "500"}], "headline-xl": ["40px", {lineHeight: "52px", letterSpacing: "-0.01em", fontWeight: "600"}], "headline-xl-mobile": ["32px", {lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "600"}], "headline-sm": ["18px", {lineHeight: "26px", fontWeight: "500"}], "headline-lg-mobile": ["24px", {lineHeight: "32px", fontWeight: "600"}], "body-reading-md": ["17px", {lineHeight: "29px", letterSpacing: "0.005em", fontWeight: "400"}], "ui-body": ["15px", {lineHeight: "22px", fontWeight: "400"}], "headline-lg": ["30px", {lineHeight: "38px", letterSpacing: "-0.005em", fontWeight: "600"}], "ui-body-strong": ["15px", {lineHeight: "22px", fontWeight: "600"}], "label-sm": ["11px", {lineHeight: "14px", letterSpacing: "0.04em", fontWeight: "600"}], "headline-md": ["22px", {lineHeight: "30px", fontWeight: "500"}], "body-reading-lg": ["20px", {lineHeight: "34px", letterSpacing: "0.005em", fontWeight: "400"}], "label-lg": ["14px", {lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "500"}], "body-reading-sm": ["15px", {lineHeight: "24px", fontWeight: "400"}]}}}};</script></head><body class="bg-surface font-ui-body text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between border-r border-outline-variant/30"><div class="flex flex-col pt-space-md"><div class="flex items-center gap-space-sm px-space-lg h-12 mb-space-md"><span class="font-label-sm text-label-sm tracking-widest uppercase text-on-surface-variant">Shelf Catalog</span></div><nav class="flex flex-col gap-space-xs px-space-md" data-active-classes="bg-secondary-fixed text-on-secondary-fixed font-ui-body-strong"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg min-h-[48px] text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="library" href="#"><span class="material-symbols-outlined text-outline">auto_stories</span><span class="font-ui-body text-ui-body">Library</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg min-h-[48px] text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="reading-now" href="#"><span class="material-symbols-outlined text-outline">menu_book</span><span class="font-ui-body text-ui-body">Reading Now</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg min-h-[48px] text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="annotations-and-highlights" href="#"><span class="material-symbols-outlined text-outline">edit_note</span><span class="font-ui-body text-ui-body">Annotations &amp; Highlights</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg min-h-[48px] text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="collections-and-shelves" href="#"><span class="material-symbols-outlined text-outline">folder_special</span><span class="font-ui-body text-ui-body">Collections &amp; Shelves</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg min-h-[48px] text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="settings-and-display" href="#"><span class="material-symbols-outlined text-outline">tune</span><span class="font-ui-body text-ui-body">Settings &amp; Display</span></a></nav></div><div class="p-space-lg border-t border-outline-variant/30 flex flex-col gap-space-sm"><div class="flex items-center justify-between text-on-surface-variant"><span class="font-label-sm text-label-sm">Daily Reading</span><span class="font-label-sm text-label-sm text-secondary font-semibold">42m / 60m</span></div><div class="w-full h-1 bg-surface-container-highest rounded-full overflow-hidden"><div class="h-full bg-secondary rounded-full w-[70%]"></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/90 backdrop-blur-md z-40 border-b border-outline-variant/30"><div class="h-16 w-full px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm font-semibold tracking-tight text-primary">E-Books</span></div><div class="relative flex items-center min-w-[280px] lg:min-w-[340px]"><span class="material-symbols-outlined absolute left-space-md text-outline text-[20px] pointer-events-none">search</span><input class="w-full h-11 pl-11 pr-space-md bg-surface-container-lowest border border-outline-variant/40 rounded-xl font-ui-body text-ui-body text-on-surface placeholder:text-outline-variant focus:outline-none focus:border-secondary transition-colors" placeholder="Search titles, authors, passages..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="flex items-center bg-surface-container-lowest border border-outline-variant/40 rounded-full p-1 gap-1"><button class="w-7 h-7 rounded-full bg-surface-bright border-2 border-secondary flex items-center justify-center" title="Paper Mode" type="button"><span class="sr-only">Paper</span></button><button class="w-7 h-7 rounded-full bg-[#f3e7d0] border border-outline-variant/30 flex items-center justify-center" title="Sepia Mode" type="button"><span class="sr-only">Sepia</span></button><button class="w-7 h-7 rounded-full bg-[#1b1a18] border border-outline-variant/30 flex items-center justify-center" title="Dark Mode" type="button"><span class="sr-only">Dark</span></button><button class="w-7 h-7 rounded-full bg-[#000000] border border-outline-variant/30 flex items-center justify-center" title="OLED Mode" type="button"><span class="sr-only">OLED</span></button></div><button class="w-11 h-11 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" title="Toggle Focus Mode" type="button"><span class="material-symbols-outlined text-[22px]">fullscreen</span></button><div class="h-6 w-[1px] bg-outline-variant/30"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="hidden sm:flex flex-col text-right"><span class="font-label-sm text-label-sm font-semibold text-on-surface">Reader</span><span class="font-label-sm text-label-sm text-secondary">42m today</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WAfjIgtjFuDM9Z-381-Tql9U-YXP_jkgDKxGu1vGw6mxRPkkLgBzCrBaW3fYXvGIJTYXesjfWrkD5jvf9ImVlkYyIO1425uktQcZmbW2uoFBE_WzT1Xw9MfR8N9WZdVAYxC69LRVqMmdq2dgbPUA8Cd4enO7lqib2gq8QHxQD9oiopfvxj9KrjJ8sKzcfBEQEYg08pOLBWbIHlwCfPzYb5dJYlJl6YQpGmjBbfS4SxVIGfNxmcna_U"/></div></div></div></header><main class="relative pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Dynamic Parent Shell Patching to highlight Collections & Shelves and insert Install App + Logo -->
+<script>
+    (function syncShellChrome() {
+      // 1. Highlight active navigation item in persistent sidebar
+      const navLinks = document.querySelectorAll('aside nav a[data-path]');
+      navLinks.forEach(link => {
+        if (link.getAttribute('data-path') === 'collections-and-shelves') {
+          link.classList.remove('text-on-surface-variant', 'hover:bg-surface-container-high', 'hover:text-on-surface');
+          link.classList.add('bg-secondary-fixed', 'text-on-secondary-fixed', 'font-ui-body-strong', 'shadow-sm');
+          const icon = link.querySelector('.material-symbols-outlined');
+          if (icon) {
+            icon.classList.remove('text-outline');
+            icon.classList.add('text-secondary');
+            icon.style.fontVariationSettings = "'FILL' 1";
+          }
+        } else {
+          link.classList.remove('bg-secondary-fixed', 'text-on-secondary-fixed', 'font-ui-body-strong', 'shadow-sm');
+          link.classList.add('text-on-surface-variant');
+        }
+      });
+
+      // 2. Inject Logo image and Install App button in fixed header
+      const headerTitleWrap = document.querySelector('header .flex.items-center.gap-space-sm');
+      if (headerTitleWrap && !document.getElementById('brand-logo-img')) {
+        const logoImg = document.createElement('img');
+        logoImg.id = 'brand-logo-img';
+        logoImg.src = 'https://lh3.googleusercontent.com/aida/AEtjO1XBZDzq3recAVZCbJPXEy5-G-rbCqNosasKU1HPwGuLzVRMgXtaCksALYXRpZuLvM-l5lNzjSlg87E3cKuo_slmR2NCXNaaWnAYgVVNp_-Ecm0Qp9411EbTXLIm2rDLU9qLPz2Y3KQMufotCs4ked5BiGvFJzFarW3sJGlBYkGeg_pwruBZg5VhXv7gMJ8UNj-BA3loWg6lTXfmLP3tLffZv55xIb6AC1OcVGkGv_wKtMzZXAnTML9f';
+        logoImg.alt = 'E-Books Monogram Logo';
+        logoImg.className = 'w-7 h-7 object-contain rounded-sm';
+        headerTitleWrap.insertBefore(logoImg, headerTitleWrap.firstChild);
+      }
+
+      const headerRightCluster = document.querySelector('header .flex.items-center.gap-space-md:last-child');
+      if (headerRightCluster && !document.getElementById('install-app-pill-btn')) {
+        const installBtn = document.createElement('button');
+        installBtn.id = 'install-app-pill-btn';
+        installBtn.type = 'button';
+        installBtn.className = 'h-9 px-3.5 rounded-full border border-secondary text-secondary hover:bg-secondary-fixed/40 transition-colors flex items-center gap-1.5 font-label-md text-label-md tracking-normal font-semibold';
+        installBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">download</span><span>Install app</span>';
+        
+        // Insert immediately before the divider preceding user profile
+        const divider = headerRightCluster.querySelector('.h-6.w-\\[1px\\]');
+        if (divider) {
+          headerRightCluster.insertBefore(installBtn, divider);
+        } else {
+          headerRightCluster.appendChild(installBtn);
+        }
+      }
+    })();
+  </script>
+<!-- Page Content Container -->
+<div class="px-8 py-7 flex flex-col gap-6 max-w-[1720px] mx-auto w-full">
+<!-- 1. Header Section -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-2 border-b border-outline-variant/30">
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-widest block mb-1">
+          Shelf Catalog
+        </span>
+<h1 class="font-headline text-3xl font-bold text-on-surface tracking-tight">
+          Collections &amp; Shelves
+        </h1>
+<p class="font-ui-body text-ui-body text-on-surface-variant mt-1 max-w-2xl">
+          Folders in your books directory become curated collections automatically.
+        </p>
+</div>
+<div class="flex items-center gap-3 self-start md:self-auto">
+<!-- Segmented Pill Control -->
+<div class="flex items-center p-1 bg-surface-container-high rounded-lg text-label-md">
+<button class="px-3.5 py-1.5 rounded-md font-semibold text-secondary bg-surface-container-lowest shadow-sm transition-all flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">folder_copy</span>
+<span>Collections</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-md font-medium text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">shelves</span>
+<span>My shelves</span>
+</button>
+</div>
+<!-- Terracotta Primary Action -->
+<button class="h-9 px-4 rounded-lg bg-secondary text-on-secondary font-medium font-label-md text-label-md hover:bg-secondary/90 active:scale-[0.98] transition-all flex items-center gap-2 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>New shelf</span>
+</button>
+</div>
+</div>
+<!-- 2. Main 3-Column Layout: Left (Smart Shelves), Center (Collections Grid), Right (Selected Collection Inspector) -->
+<div class="grid grid-cols-12 gap-6 items-start">
+<!-- LEFT COLUMN: Smart Shelves & Sync Breakdown (~240px wide on desktop) -->
+<aside class="col-span-12 lg:col-span-3 xl:col-span-2 flex flex-col gap-4">
+<!-- Smart Shelves Box -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm border border-outline-variant/30 flex flex-col gap-2">
+<div class="flex items-center justify-between pb-2 mb-1 border-b border-outline-variant/20">
+<span class="font-label-sm text-label-sm font-semibold tracking-wider uppercase text-on-surface-variant">
+              Smart Shelves
+            </span>
+<span class="material-symbols-outlined text-outline text-[16px]">auto_awesome</span>
+</div>
+<nav class="flex flex-col gap-1">
+<!-- Currently Reading (Subtle Active) -->
+<a class="flex items-center justify-between px-3 py-2.5 rounded-lg bg-secondary-fixed/50 text-on-secondary-fixed transition-colors font-medium text-ui-body" href="#">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">local_library</span>
+<span class="truncate">Currently reading</span>
+</div>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-semibold">3</span>
+</a>
+<!-- Want to read -->
+<a class="flex items-center justify-between px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors text-ui-body" href="#">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="material-symbols-outlined text-outline text-[20px]">bookmark</span>
+<span class="truncate">Want to read</span>
+</div>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-medium">9</span>
+</a>
+<!-- Finished -->
+<a class="flex items-center justify-between px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors text-ui-body" href="#">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="material-symbols-outlined text-outline text-[20px]">task_alt</span>
+<span class="truncate">Finished</span>
+</div>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-medium">15</span>
+</a>
+<!-- Downloaded -->
+<a class="flex items-center justify-between px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors text-ui-body" href="#">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="material-symbols-outlined text-outline text-[20px]">offline_pin</span>
+<span class="truncate">Downloaded</span>
+</div>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-medium">6</span>
+</a>
+</nav>
+</div>
+<!-- Storage & Scan Mini Card -->
+<div class="bg-surface-container-low rounded-xl p-4 border border-outline-variant/30 flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold tracking-wider uppercase text-on-surface-variant">Storage</span>
+<span class="inline-flex items-center gap-1 text-[11px] font-medium text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> Synced
+            </span>
+</div>
+<div class="flex flex-col gap-1 text-ui-body text-xs text-on-surface-variant">
+<p class="leading-relaxed">
+<strong class="text-on-surface font-semibold">14 folios</strong> cached locally.
+            </p>
+<p class="text-[11px] text-outline">
+              GitHub repo synced 2m ago.
+            </p>
+</div>
+<button class="w-full mt-1 py-2 px-3 rounded-lg border border-outline-variant/40 bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-[17px] text-secondary">sync</span>
+<span>Auto-Scan Folders</span>
+</button>
+</div>
+<!-- Reading Goal Metric Widget -->
+<div class="bg-surface-container-lowest rounded-xl p-4 border border-outline-variant/30 shadow-sm flex flex-col gap-2">
+<span class="font-label-sm text-label-sm font-semibold tracking-wider uppercase text-on-surface-variant">Catalog Health</span>
+<div class="flex items-baseline justify-between mt-1">
+<span class="font-headline text-2xl font-bold text-on-surface">60</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">6 Collections</span>
+</div>
+<p class="font-ui-body text-[12px] text-on-surface-variant">Total indexed digital tomes across local vault directory.</p>
+</div>
+</aside>
+<!-- CENTER AREA: Automatic Folders Grid (Flexible 4-col in 1440px desktop) -->
+<section class="col-span-12 lg:col-span-6 xl:col-span-7 flex flex-col gap-4">
+<!-- Section Bar -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<h2 class="font-headline text-xl font-semibold text-on-surface">Automatic Folders</h2>
+<span class="font-label-sm text-label-sm font-semibold px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant">6</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="h-8 px-2.5 rounded-md text-on-surface-variant hover:bg-surface-container-high text-label-md flex items-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">swap_vert</span>
+<span>Name (A-Z)</span>
+</button>
+<button class="w-8 h-8 rounded-md flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors" title="Folder display settings" type="button">
+<span class="material-symbols-outlined text-[18px]">filter_list</span>
+</button>
+</div>
+</div>
+<!-- 4-Column Card Grid (Collapses gracefully on responsive breakpoints) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 gap-4">
+<!-- 1. Philosophy (Selected / Active State) -->
+<article class="bg-surface-container-lowest rounded-xl p-4 border-2 border-secondary shadow-sm hover:shadow-md transition-all cursor-pointer flex flex-col justify-between group relative overflow-hidden ring-2 ring-secondary-fixed/50">
+<div class="absolute top-3 right-3 text-secondary font-medium">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<!-- Overlapping Fan of 3 Book Covers (2:3 aspect ratio) -->
+<div class="h-36 w-full flex items-center justify-center relative mb-4 pt-2">
+<!-- Left Cover -->
+<div class="w-16 h-24 rounded-[3px] bg-[#3B2F20] text-[#EADBC2] shadow-sm transform -rotate-12 -translate-x-5 translate-y-1 transition-transform group-hover:-rotate-16 overflow-hidden border border-black/10 flex flex-col justify-between p-1.5">
+<span class="text-[7px] font-headline uppercase leading-tight tracking-tighter opacity-80">Marcus Aurelius</span>
+<span class="text-[9px] font-headline font-bold leading-tight">Meditations</span>
+</div>
+<!-- Right Cover -->
+<div class="w-16 h-24 rounded-[3px] bg-[#1E2522] text-[#D8E2DC] shadow-sm transform rotate-12 translate-x-5 translate-y-1 transition-transform group-hover:rotate-16 overflow-hidden border border-black/10 flex flex-col justify-between p-1.5">
+<span class="text-[7px] font-headline uppercase leading-tight tracking-tighter opacity-80">F. Nietzsche</span>
+<span class="text-[9px] font-headline font-bold leading-tight">Beyond Good &amp; Evil</span>
+</div>
+<!-- Front Center Cover -->
+<div class="w-18 h-26 w-[72px] h-[106px] rounded-[3px] bg-secondary text-white shadow-md z-10 transform translate-y-0 transition-transform group-hover:-translate-y-1 overflow-hidden border border-white/20 flex flex-col justify-between p-2">
+<span class="text-[8px] font-headline uppercase leading-tight tracking-wider opacity-90">Seneca</span>
+<span class="text-[10px] font-headline font-bold leading-snug">Letters from a Stoic</span>
+<span class="text-[7px] font-label tracking-widest uppercase opacity-75">Moral Epistles</span>
+</div>
+</div>
+<!-- Metadata & Title -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<h3 class="font-headline text-lg font-bold text-on-surface group-hover:text-secondary transition-colors">Philosophy</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">12 books</span>
+</div>
+<!-- Progress Bar: 33% (4 finished) -->
+<div class="mt-3 flex flex-col gap-1.5">
+<div class="flex items-center justify-between text-[11px] font-label text-on-surface-variant">
+<span>Completed</span>
+<span class="text-secondary font-semibold">33% (4)</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full w-[33%]"></div>
+</div>
+</div>
+</div>
+</article>
+<!-- 2. Fiction -->
+<article class="bg-surface-container-lowest rounded-xl p-4 border border-outline-variant/30 shadow-sm hover:border-outline-variant hover:shadow-md transition-all cursor-pointer flex flex-col justify-between group">
+<!-- Overlapping Fan of 3 Book Covers -->
+<div class="h-36 w-full flex items-center justify-center relative mb-4 pt-2">
+<!-- Left Cover -->
+<div class="w-16 h-24 rounded-[3px] bg-[#2E3B39] text-[#E5EBEA] shadow-sm transform -rotate-12 -translate-x-5 translate-y-1 transition-transform group-hover:-rotate-16 overflow-hidden border border-black/10 flex flex-col justify-between p-1.5">
+<span class="text-[7px] font-headline uppercase leading-tight opacity-80">Donna Tartt</span>
+<span class="text-[9px] font-headline font-bold leading-tight">Secret History</span>
+</div>
+<!-- Right Cover -->
+<div class="w-16 h-24 rounded-[3px] bg-[#472F2B] text-[#F3DFD8] shadow-sm transform rotate-12 translate-x-5 translate-y-1 transition-transform group-hover:rotate-16 overflow-hidden border border-black/10 flex flex-col justify-between p-1.5">
+<span class="text-[7px] font-headline uppercase leading-tight opacity-80">Anthology</span>
+<span class="text-[9px] font-headline font-bold leading-tight">Classic Prose</span>
+</div>
+<!-- Front Center Cover -->
+<div class="w-[72px] h-[106px] rounded-[3px] bg-[#1F2937] text-white shadow-md z-10 transition-transform group-hover:-translate-y-1 overflow-hidden border border-white/20 flex flex-col justify-between p-2">
+<span class="text-[8px] font-headline uppercase leading-tight opacity-85">E. Thorne</span>
+<span class="text-[10px] font-headline font-bold leading-snug">Whispers in Ivy</span>
+<span class="text-[7px] font-label uppercase opacity-75">A Novel</span>
+</div>
+</div>
+<!-- Metadata & Title -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<h3 class="font-headline text-lg font-bold text-on-surface group-hover:text-secondary transition-colors">Fiction</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">8 books</span>
+</div>
+<!-- Progress Bar: 25% (2 finished) -->
+<div class="mt-3 flex flex-col gap-1.5">
+<div class="flex items-center justify-between text-[11px] font-label text-on-surface-variant">
+<span>Completed</span>
+<span class="text-on-surface-variant font-medium">25% (2)</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full w-[25%]"></div>
+</div>
+</div>
+</div>
+</article>
+<!-- 3. Study & Work -->
+<article class="bg-surface-container-lowest rounded-xl p-4 border border-outline-variant/30 shadow-sm hover:border-outline-variant hover:shadow-md transition-all cursor-pointer flex flex-col justify-between group">
+<!-- Overlapping Fan of 3 Book Covers -->
+<div class="h-36 w-full flex items-center justify-center relative mb-4 pt-2">
+<!-- Left Cover -->
+<div class="w-16 h-24 rounded-[3px] bg-[#1E3A4C] text-[#DCE9F2] shadow-sm transform -rotate-12 -translate-x-5 translate-y-1 transition-transform group-hover:-rotate-16 overflow-hidden border border-black/10 flex flex-col justify-between p-1.5">
+<span class="text-[7px] font-headline uppercase leading-tight opacity-80">Cal Newport</span>
+<span class="text-[9px] font-headline font-bold leading-tight">Deep Work</span>
+</div>
+<!-- Right Cover -->
+<div class="w-16 h-24 rounded-[3px] bg-[#31333B] text-[#E0E2EC] shadow-sm transform rotate-12 translate-x-5 translate-y-1 transition-transform group-hover:rotate-16 overflow-hidden border border-black/10 flex flex-col justify-between p-1.5">
+<span class="text-[7px] font-headline uppercase leading-tight opacity-80">Russell</span>
+<span class="text-[9px] font-headline font-bold leading-tight">Logic &amp; Proof</span>
+</div>
+<!-- Front Center Cover -->
+<div class="w-[72px] h-[106px] rounded-[3px] bg-[#78350F] text-white shadow-md z-10 transition-transform group-hover:-translate-y-1 overflow-hidden border border-white/20 flex flex-col justify-between p-2">
+<span class="text-[8px] font-headline uppercase leading-tight opacity-85">Executive</span>
+<span class="text-[10px] font-headline font-bold leading-snug">Strategic Playbook</span>
+<span class="text-[7px] font-label uppercase opacity-75">Systems</span>
+</div>
+</div>
+<!-- Metadata & Title -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<h3 class="font-headline text-lg font-bold text-on-surface group-hover:text-secondary transition-colors">Study &amp; Work</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">6 books</span>
+</div>
+<!-- Progress Bar: 16% (1 finished) -->
+<div class="mt-3 flex flex-col gap-1.5">
+<div class="flex items-center justify-between text-[11px] font-label text-on-surface-variant">
+<span>Completed</span>
+<span class="text-on-surface-variant font-medium">16% (1)</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full w-[16%]"></div>
+</div>
+</div>
+</div>
+</article>
+<!-- 4. Reference -->
+<article class="bg-surface-container-lowest rounded-xl p-4 border border-outline-variant/30 shadow-sm hover:border-outline-variant hover:shadow-md transition-all cursor-pointer flex flex-col justify-between group">
+<!-- Overlapping Fan of 3 Book Covers -->
+<div class="h-36 w-full flex items-center justify-center relative mb-4 pt-2">
+<!-- Left Cover -->
+<div class="w-16 h-24 rounded-[3px] bg-[#273B2E] text-[#DCEADE] shadow-sm transform -rotate-12 -translate-x-5 translate-y-1 transition-transform group-hover:-rotate-16 overflow-hidden border border-black/10 flex flex-col justify-between p-1.5">
+<span class="text-[7px] font-headline uppercase leading-tight opacity-80">Manual</span>
+<span class="text-[9px] font-headline font-bold leading-tight">Chicago Style</span>
+</div>
+<!-- Right Cover -->
+<div class="w-16 h-24 rounded-[3px] bg-[#3B2C3E] text-[#EADCF0] shadow-sm transform rotate-12 translate-x-5 translate-y-1 transition-transform group-hover:rotate-16 overflow-hidden border border-black/10 flex flex-col justify-between p-1.5">
+<span class="text-[7px] font-headline uppercase leading-tight opacity-80">Lexicon</span>
+<span class="text-[9px] font-headline font-bold leading-tight">Etymology</span>
+</div>
+<!-- Front Center Cover -->
+<div class="w-[72px] h-[106px] rounded-[3px] bg-[#164E63] text-white shadow-md z-10 transition-transform group-hover:-translate-y-1 overflow-hidden border border-white/20 flex flex-col justify-between p-2">
+<span class="text-[8px] font-headline uppercase leading-tight opacity-85">Encyclopedia</span>
+<span class="text-[10px] font-headline font-bold leading-snug">Natural Forms</span>
+<span class="text-[7px] font-label uppercase opacity-75">Botanical</span>
+</div>
+</div>
+<!-- Metadata & Title -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<h3 class="font-headline text-lg font-bold text-on-surface group-hover:text-secondary transition-colors">Reference</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">14 books</span>
+</div>
+<!-- Progress Bar: 57% (8 finished) -->
+<div class="mt-3 flex flex-col gap-1.5">
+<div class="flex items-center justify-between text-[11px] font-label text-on-surface-variant">
+<span>Completed</span>
+<span class="text-secondary font-semibold">57% (8)</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full w-[57%]"></div>
+</div>
+</div>
+</div>
+</article>
+<!-- 5. Design & Typography -->
+<article class="bg-surface-container-lowest rounded-xl p-4 border border-outline-variant/30 shadow-sm hover:border-outline-variant hover:shadow-md transition-all cursor-pointer flex flex-col justify-between group">
+<!-- Overlapping Fan of 3 Book Covers -->
+<div class="h-36 w-full flex items-center justify-center relative mb-4 pt-2">
+<!-- Left Cover -->
+<div class="w-16 h-24 rounded-[3px] bg-[#33221B] text-[#F3E2DB] shadow-sm transform -rotate-12 -translate-x-5 translate-y-1 transition-transform group-hover:-rotate-16 overflow-hidden border border-black/10 flex flex-col justify-between p-1.5">
+<span class="text-[7px] font-headline uppercase leading-tight opacity-80">Müller-B.</span>
+<span class="text-[9px] font-headline font-bold leading-tight">Grid Systems</span>
+</div>
+<!-- Right Cover -->
+<div class="w-16 h-24 rounded-[3px] bg-[#222E30] text-[#D3E5E8] shadow-sm transform rotate-12 translate-x-5 translate-y-1 transition-transform group-hover:rotate-16 overflow-hidden border border-black/10 flex flex-col justify-between p-1.5">
+<span class="text-[7px] font-headline uppercase leading-tight opacity-80">Rams</span>
+<span class="text-[9px] font-headline font-bold leading-tight">Less But Better</span>
+</div>
+<!-- Front Center Cover -->
+<div class="w-[72px] h-[106px] rounded-[3px] bg-[#040302] text-white shadow-md z-10 transition-transform group-hover:-translate-y-1 overflow-hidden border border-white/20 flex flex-col justify-between p-2">
+<span class="text-[8px] font-headline uppercase leading-tight opacity-85">Emil Ruder</span>
+<span class="text-[10px] font-headline font-bold leading-snug">Type as Form</span>
+<span class="text-[7px] font-label uppercase opacity-75">Swiss Style</span>
+</div>
+</div>
+<!-- Metadata & Title -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<h3 class="font-headline text-lg font-bold text-on-surface group-hover:text-secondary transition-colors">Design &amp; Typography</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">9 books</span>
+</div>
+<!-- Progress Bar: 55% (5 finished) -->
+<div class="mt-3 flex flex-col gap-1.5">
+<div class="flex items-center justify-between text-[11px] font-label text-on-surface-variant">
+<span>Completed</span>
+<span class="text-secondary font-semibold">55% (5)</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full w-[55%]"></div>
+</div>
+</div>
+</div>
+</article>
+<!-- 6. Essays & Letters -->
+<article class="bg-surface-container-lowest rounded-xl p-4 border border-outline-variant/30 shadow-sm hover:border-outline-variant hover:shadow-md transition-all cursor-pointer flex flex-col justify-between group">
+<!-- Overlapping Fan of 3 Book Covers -->
+<div class="h-36 w-full flex items-center justify-center relative mb-4 pt-2">
+<!-- Left Cover -->
+<div class="w-16 h-24 rounded-[3px] bg-[#383329] text-[#EFE7D8] shadow-sm transform -rotate-12 -translate-x-5 translate-y-1 transition-transform group-hover:-rotate-16 overflow-hidden border border-black/10 flex flex-col justify-between p-1.5">
+<span class="text-[7px] font-headline uppercase leading-tight opacity-80">Thoreau</span>
+<span class="text-[9px] font-headline font-bold leading-tight">Walden Pond</span>
+</div>
+<!-- Right Cover -->
+<div class="w-16 h-24 rounded-[3px] bg-[#2E3743] text-[#DEE6F2] shadow-sm transform rotate-12 translate-x-5 translate-y-1 transition-transform group-hover:rotate-16 overflow-hidden border border-black/10 flex flex-col justify-between p-1.5">
+<span class="text-[7px] font-headline uppercase leading-tight opacity-80">Woolf</span>
+<span class="text-[9px] font-headline font-bold leading-tight">Common Reader</span>
+</div>
+<!-- Front Center Cover -->
+<div class="w-[72px] h-[106px] rounded-[3px] bg-[#5B2C24] text-white shadow-md z-10 transition-transform group-hover:-translate-y-1 overflow-hidden border border-white/20 flex flex-col justify-between p-2">
+<span class="text-[8px] font-headline uppercase leading-tight opacity-85">Montaigne</span>
+<span class="text-[10px] font-headline font-bold leading-snug">The Essays</span>
+<span class="text-[7px] font-label uppercase opacity-75">Complete</span>
+</div>
+</div>
+<!-- Metadata & Title -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<h3 class="font-headline text-lg font-bold text-on-surface group-hover:text-secondary transition-colors">Essays &amp; Letters</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">11 books</span>
+</div>
+<!-- Progress Bar: 54% (6 finished) -->
+<div class="mt-3 flex flex-col gap-1.5">
+<div class="flex items-center justify-between text-[11px] font-label text-on-surface-variant">
+<span>Completed</span>
+<span class="text-secondary font-semibold">54% (6)</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full w-[54%]"></div>
+</div>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- RIGHT PANEL: Selected Collection Inspector (Philosophy - ~320px wide) -->
+<aside class="col-span-12 lg:col-span-3 xl:col-span-3 bg-surface-container-lowest rounded-xl p-5 border border-outline-variant/30 shadow-sm flex flex-col gap-5 sticky top-20">
+<!-- Header & Category Badge -->
+<div class="flex flex-col gap-2 pb-4 border-b border-outline-variant/20">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold bg-secondary-fixed/40 px-2 py-0.5 rounded-full">
+              Selected Collection
+            </span>
+<div class="flex items-center gap-1">
+<button class="w-7 h-7 rounded hover:bg-surface-container text-on-surface-variant flex items-center justify-center transition-colors" title="Folder settings">
+<span class="material-symbols-outlined text-[18px]">more_horiz</span>
+</button>
+</div>
+</div>
+<h2 class="font-headline text-2xl font-bold text-on-surface mt-1">Philosophy</h2>
+<span class="font-label-md text-label-md text-outline">12 books total • 4 finished</span>
+<p class="font-ui-body text-xs text-on-surface-variant leading-relaxed italic bg-surface-container-low p-2.5 rounded-lg border border-outline-variant/20">
+            books/philosophy/ — Hellenistic ethics, existential inquiries, and foundational treatises for contemplative living.
+          </p>
+<!-- Progress Bar Header -->
+<div class="flex flex-col gap-1 pt-1">
+<div class="flex items-center justify-between font-label text-xs">
+<span class="text-on-surface font-medium">4 of 12 finished</span>
+<span class="text-secondary font-bold">33%</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full w-[33%] transition-all"></div>
+</div>
+</div>
+</div>
+<!-- Scrollable Book List -->
+<div class="flex flex-col gap-3.5 max-h-[460px] overflow-y-auto pr-1">
+<!-- Book 1: Meditations -->
+<div class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low transition-colors group">
+<div class="flex items-center gap-3 min-w-0">
+<img class="w-10 h-14 object-cover rounded-[3px] shadow-sm shrink-0 border border-outline-variant/30" data-alt="Classical warm leather book cover with gold foil typography for Meditations by Marcus Aurelius on cream paper background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvUQ6NWDedspYwJRiFGBpPPSMpf4VAuT5YC73H_ve982DcE9kzgiYWbSEtMIHCdCACM2PjFL2idh8YQnAFnMD9DsYBfkOa9Vz006YU5HPOUHEPKsecUE3IJcjKdFOvkNi5K7ugaPtiJuZVVJJIPNv8WQfuo-Vf0LdswYAogPVNm6zQKaqn_0jbjSaFlirbDr9NiIe2k4arCAXI1B0SBgcpBnZk0OBjXuCL1SFE6owTNflwQl9H8Q"/>
+<div class="flex flex-col min-w-0">
+<h4 class="font-headline text-sm font-semibold text-on-surface truncate group-hover:text-secondary transition-colors">Meditations</h4>
+<span class="font-label text-xs text-outline truncate">Marcus Aurelius</span>
+<span class="font-label-sm text-[11px] text-secondary font-medium mt-0.5">Book IV • 18 notes</span>
+</div>
+</div>
+<button class="px-2.5 py-1 text-xs rounded bg-secondary-fixed text-on-secondary-fixed font-semibold hover:bg-secondary hover:text-white transition-colors shrink-0">
+              Continue
+            </button>
+</div>
+<!-- Book 2: Letters from a Stoic -->
+<div class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low transition-colors group">
+<div class="flex items-center gap-3 min-w-0">
+<img class="w-10 h-14 object-cover rounded-[3px] shadow-sm shrink-0 border border-outline-variant/30" data-alt="Terracotta minimalist book cover design for Letters from a Stoic by Lucius Annaeus Seneca with geometric column motif" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkieaGnpUofwlCikkdFWW5YQO2eD_91wq5FQxj4stEk-Y3s9LcdEGMvtxdNoSlU7MWv9LxtWLGXKDtWcISH8iZjruXQAjUcEM7iUgXiMKBCvEajdW23Z-tZ3CdFVmV_Fu4uCr4JkmPB2c5hRWchPmswVa5FW7B2jk72h1WsACAhcGK8Ct7yid0b118jAzUeJyijU7Bf8cbmmnTPKYj4lU17HaF5Qv1PmjVhC9mXDYLYtvT75worg"/>
+<div class="flex flex-col min-w-0">
+<h4 class="font-headline text-sm font-semibold text-on-surface truncate group-hover:text-secondary transition-colors">Letters from a Stoic</h4>
+<span class="font-label text-xs text-outline truncate">L. A. Seneca</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant mt-0.5">Ready to start • 256 pp</span>
+</div>
+</div>
+<button class="px-2.5 py-1 text-xs rounded border border-outline-variant/50 text-on-surface font-medium hover:bg-surface-container-high transition-colors shrink-0">
+              Start
+            </button>
+</div>
+<!-- Book 3: Beyond Good and Evil -->
+<div class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low transition-colors group">
+<div class="flex items-center gap-3 min-w-0">
+<img class="w-10 h-14 object-cover rounded-[3px] shadow-sm shrink-0 border border-outline-variant/30" data-alt="Dark scholarly book cover for Beyond Good and Evil by Friedrich Nietzsche with elegant serif lettering on deep charcoal paper" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9nZzy9j6dS0zNzQJ6F54FRkcbc4HeAU_LtQEp8RC1HnmKpySNOCVy1VaCg48swwnWhXr8IsdyomhjXyuIWmSXlJmIeEkGXIHS6lJIlfqzw6qLvakOEa9jtcHOiaiTt3Ys-MZIA3FTcsf7V5EXxB26mgwZuxeE-AFUBugT_qsjlkYsROHl69eX6IgpI7NlTdUnWnbp2BrdLwHwkjSURltTk0iED7lab1fBWD6kHK4dVc9bE6Zskg"/>
+<div class="flex flex-col min-w-0">
+<h4 class="font-headline text-sm font-semibold text-on-surface truncate group-hover:text-secondary transition-colors">Beyond Good and Evil</h4>
+<span class="font-label text-xs text-outline truncate">Friedrich Nietzsche</span>
+<span class="font-label-sm text-[11px] text-outline mt-0.5">Unread • 3h 40m</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px] shrink-0 opacity-40 group-hover:opacity-100 transition-opacity">chevron_right</span>
+</div>
+<!-- Book 4: The Antidote -->
+<div class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low transition-colors group">
+<div class="flex items-center gap-3 min-w-0">
+<img class="w-10 h-14 object-cover rounded-[3px] shadow-sm shrink-0 border border-outline-variant/30" data-alt="Modern editorial book cover for The Antidote Happiness for People Who Cant Stand Positive Thinking by Oliver Burkeman" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXNoVgPsYP951B4xO4AxSx2dHoPNKEznQSPNjNUgLNgrTbxOghLHENof6kMqryltDd4VDVMx7haRTB3YlzVr7GgV1CCqy5MLcBGRDGIbRAy9xvZM9Xm6pmrBUCUE5YKTOVuGZRBXI3uF8Lt0Owu5LpdK4tNvGdpftO19Jv9rJntNq7OfT6PgkEtlh284n1vvqpE4p6ZgFEIobtN1D5XjwlfP2sg15BASfKeVdL53TxsbQiowSzIw"/>
+<div class="flex flex-col min-w-0">
+<h4 class="font-headline text-sm font-semibold text-on-surface truncate group-hover:text-secondary transition-colors">The Antidote</h4>
+<span class="font-label text-xs text-outline truncate">Oliver Burkeman</span>
+<span class="font-label-sm text-[11px] text-emerald-700 flex items-center gap-1 font-medium mt-0.5">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> Finished • Jul 14
+                </span>
+</div>
+</div>
+<button class="w-7 h-7 flex items-center justify-center rounded text-outline hover:text-on-surface transition-colors shrink-0">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+</button>
+</div>
+<!-- Book 5: The Ethics of Ambiguity -->
+<div class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low transition-colors group">
+<div class="flex items-center gap-3 min-w-0">
+<img class="w-10 h-14 object-cover rounded-[3px] shadow-sm shrink-0 border border-outline-variant/30" data-alt="French philosophical monograph cover for The Ethics of Ambiguity by Simone de Beauvoir in warm ivory cardstock" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmyNjHUsiq4ympSzOxAY1ziFLhYbHqL4WcM79KqNvMR907omL8LvnyRmi8QtjjE5m334CpOHUOQYeiN5gm3ckD7TpQcUYp6z10Oa46SDshSHlK3O07MuyY-Wb7v8lpuLK66FEgSoGS8kWNcZ5Ma5mwY6_bLKhz59oxP12Up0ii6VexrlrYeduPGmwF8F7p3QBBb_OPW3ayAHhqC2bKHTxcE5UQDAeoQEM0Rkq6I0rW05Q6P1asrQ"/>
+<div class="flex flex-col min-w-0">
+<h4 class="font-headline text-sm font-semibold text-on-surface truncate group-hover:text-secondary transition-colors">Ethics of Ambiguity</h4>
+<span class="font-label text-xs text-outline truncate">Simone de Beauvoir</span>
+<span class="font-label-sm text-[11px] text-emerald-700 flex items-center gap-1 font-medium mt-0.5">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> Finished • Jun 28
+                </span>
+</div>
+</div>
+<button class="w-7 h-7 flex items-center justify-center rounded text-outline hover:text-on-surface transition-colors shrink-0">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+</button>
+</div>
+<!-- Book 6: Discourses -->
+<div class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low transition-colors group">
+<div class="flex items-center gap-3 min-w-0">
+<img class="w-10 h-14 object-cover rounded-[3px] shadow-sm shrink-0 border border-outline-variant/30" data-alt="Antique parchment style book cover for Discourses and Selected Writings of Epictetus in Greek revival layout" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2upZiUTdlFRqI4g7HQhhOjd0_zzgCvr1nX6bcGLTYTblJAelNk-NKTxuIePJVhJGAHd5MRf8x-aaddpBIDcZAh5SiYuDLgk6z7LHVYG99tC0x6u9e8xMluF7LecWzhVqwmLLMbdah5YWeIBOryybw_MXUcWPepvfhFTxUIQcBmuWXoIf5XNHrXkTQqCuW5YClAJ3R_Gq8IOf09wVbb2kQrJZBRmTOpPKgtSK9qAPzBhHjMEcBlw"/>
+<div class="flex flex-col min-w-0">
+<h4 class="font-headline text-sm font-semibold text-on-surface truncate group-hover:text-secondary transition-colors">Discourses</h4>
+<span class="font-label text-xs text-outline truncate">Epictetus</span>
+<span class="font-label-sm text-[11px] text-secondary font-medium mt-0.5">14% • Book I</span>
+</div>
+</div>
+<button class="px-2.5 py-1 text-xs rounded bg-surface-container-high text-on-surface font-medium hover:bg-secondary hover:text-white transition-colors shrink-0">
+              Resume
+            </button>
+</div>
+</div>
+<!-- Quick Actions at Bottom -->
+<div class="pt-3 border-t border-outline-variant/20 flex flex-col gap-2">
+<button class="w-full py-2 px-3 rounded-lg border border-dashed border-secondary/50 text-secondary hover:bg-secondary-fixed/30 font-label-md text-label-md transition-colors flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[17px]">library_add</span>
+<span>+ Add book to folder</span>
+</button>
+<button class="w-full py-1.5 text-xs text-on-surface-variant hover:text-on-surface transition-colors flex items-center justify-center gap-1 font-label" type="button">
+<span class="material-symbols-outlined text-[15px]">ios_share</span>
+<span>Export collection notes (.md)</span>
+</button>
+</div>
+</aside>
+</div>
+</div>
+</div></main></div></body></html>

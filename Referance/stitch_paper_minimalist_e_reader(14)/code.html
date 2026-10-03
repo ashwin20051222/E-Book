@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;1,7..72,400&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-surface-variant": "#4a463f", "surface-tint": "#615e5a", "inverse-primary": "#cbc6c1", "tertiary-container": "#241c17", "surface-variant": "#e4e2de", "error": "#ba1a1a", "primary": "#040302", "on-tertiary-fixed-variant": "#4f453e", "on-primary": "#ffffff", "surface-bright": "#fbf9f5", "on-surface": "#1b1c1a", "on-background": "#1b1c1a", "surface-container-low": "#f5f3ef", "on-primary-fixed": "#1d1b18", "on-tertiary-container": "#90837b", "on-error": "#ffffff", "on-secondary-container": "#752402", "on-secondary": "#ffffff", "surface-dim": "#dbdad6", "outline-variant": "#cdc5bc", "secondary-fixed-dim": "#ffb59c", "inverse-surface": "#30312e", "on-error-container": "#93000a", "tertiary": "#070301", "on-tertiary-fixed": "#221a15", "on-secondary-fixed": "#380c00", "background": "#fbf9f5", "surface": "#fbf9f5", "on-secondary-fixed-variant": "#7f2b08", "surface-container": "#efeeea", "tertiary-fixed-dim": "#d3c3bb", "surface-container-high": "#eae8e4", "primary-fixed": "#e7e1dc", "surface-container-lowest": "#ffffff", "primary-container": "#1f1d1a", "primary-fixed-dim": "#cbc6c1", "on-primary-container": "#898580", "inverse-on-surface": "#f2f0ed", "outline": "#7c766e", "secondary-fixed": "#ffdbcf", "on-tertiary": "#ffffff", "secondary": "#B5532E", "surface-container-highest": "#e4e2de", "error-container": "#ffdad6", "secondary-container": "#ff8c62", "tertiary-fixed": "#f0dfd6", "on-primary-fixed-variant": "#494643" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: {}, fontFamily: { headline: ["Literata"], display: ["Literata"], body: ["Literata"], label: ["Inter"] }, fontSize: {} } } }</script><style>@layer base { html, body { min-height: 100%; margin: 0; padding: 0; } body { overscroll-behavior-y: none; -webkit-tap-highlight-color: transparent; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; display: inline-block; vertical-align: middle; } ::-webkit-scrollbar { display: none; }
+    body {
+      min-height: max(844px, 100dvh);
+    }
+  </style></head><body class="bg-background font-body text-on-surface antialiased flex flex-col min-h-screen selection:bg-secondary-fixed selection:text-on-secondary-fixed overflow-hidden"><header class="fixed top-0 inset-x-0 z-30 bg-surface/90 backdrop-blur-xl pt-safe transition-all"><div class="h-14 px-4 flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="flex items-center gap-2.5 min-w-0"><img alt="E-Books logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1XBZDzq3recAVZCbJPXEy5-G-rbCqNosasKU1HPwGuLzVRMgXtaCksALYXRpZuLvM-l5lNzjSlg87E3cKuo_slmR2NCXNaaWnAYgVVNp_-Ecm0Qp9411EbTXLIm2rDLU9qLPz2Y3KQMufotCs4ked5BiGvFJzFarW3sJGlBYkGeg_pwruBZg5VhXv7gMJ8UNj-BA3loWg6lTXfmLP3tLffZv55xIb6AC1OcVGkGv_wKtMzZXAnTML9f"/><div class="flex flex-col min-w-0"><span class="font-headline font-semibold text-xl tracking-tight text-on-surface leading-tight select-none">E-Books</span><span class="font-label text-[10px] uppercase tracking-wider text-on-surface-variant sr-only">Library</span></div></div><div class="flex items-center gap-1.5 shrink-0"><button aria-label="Search catalog" class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-on-surface active:bg-surface-container rounded-full transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">search</span></button><div class="flex items-center justify-center min-h-[44px] min-w-[44px]"><button class="h-9 px-3.5 rounded-full flex items-center gap-1.5 font-label text-xs font-semibold text-[#B5532E] bg-surface-container-lowest shadow-[0_1px_4px_rgba(0,0,0,0.05)] hover:bg-surface-container-low transition-colors" type="button"><span class="material-symbols-outlined text-[18px] text-[#B5532E]">download</span><span>Install</span></button></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0 ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-14 pb-16 bg-background h-screen overflow-hidden"><div class="flex flex-col w-full h-full relative select-none">
+<!-- Dimmed Library Content Layer (Background View) -->
+<div aria-hidden="true" class="px-4 pt-3 pb-6 opacity-40 blur-[0.5px] pointer-events-none">
+<div class="flex items-center justify-between mb-4">
+<div>
+<p class="font-label text-xs uppercase tracking-wider text-on-surface-variant font-medium">Personal Library</p>
+<h2 class="font-headline text-2xl font-semibold text-on-surface">Currently Reading</h2>
+</div>
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">filter_list</span>
+</div>
+</div>
+<!-- Library Book Grid Snapshot -->
+<div class="grid grid-cols-3 gap-3 mb-4">
+<div class="flex flex-col">
+<div class="w-full aspect-[2/3] rounded bg-surface-container-high shadow-sm overflow-hidden mb-2 relative">
+<img alt="Meditations cover" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGhdT9gepX6pkeE73TXlUzZ6BFqDVzdPZI0QeFAsebSL9j35pibYklJv3FHDfpaoSQqtlpXQtFe_5qXW59yADT_CuBtEX8PSa0jO8S70PKdIOFZPnyOUBmS_mLiKKT_AX3Lq-1zNWJImSXc7YHbunnv2B7farclXcAQrjFHrN4t5U8nTybZ9h8085tvbRb_a-zznXMJK5DvaEryDIMIzfTCXVQ0Y0dZG1EGqJUkkgAVO5F6KkkVA"/>
+</div>
+<p class="font-headline text-xs font-semibold truncate text-on-surface">Meditations</p>
+<p class="font-label text-[10px] text-on-surface-variant truncate">M. Aurelius</p>
+</div>
+<div class="flex flex-col">
+<div class="w-full aspect-[2/3] rounded bg-surface-container-high shadow-sm overflow-hidden mb-2 relative">
+<img alt="Letters from a Stoic cover" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6FgBwE7yolHiLSrc_NTvVydGDj5KNCc6BeEAtWAUmoBqmSCbDmOtGLQxwa8wPK56ap2H0e79i01xvYN8V1DRNW97hCayF8W4Ht_5_J4LX27QfG-FGtrQSNI1r8eVKAlhGsAjoK8v6NNSIGABDGS56MdimHPsqhCO5tzJW9lgj3kTQw34g4KnQTjHlhpyhUu2vEhX2Rj90NBEcyBt_xvfjlPuSFPNrhKN8Jj4DsgT2OnLrTQ094g"/>
+</div>
+<p class="font-headline text-xs font-semibold truncate text-on-surface">Letters from a Stoic</p>
+<p class="font-label text-[10px] text-on-surface-variant truncate">Seneca</p>
+</div>
+<div class="flex flex-col">
+<div class="w-full aspect-[2/3] rounded bg-surface-container-high shadow-sm overflow-hidden mb-2 relative">
+<img alt="Complete Essays cover" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtY8-BJRJLmGze2tQrxtudqOSZ1Puezs8FfJU6EEgyRCsQpYWajmRvIsNyYiYJq1v52AliSS9ZN9k28Zn0OeAw0AWxI2fhTlymAopaRL4fWn60y2Z3mBBCERhaAv-4yJvKq73fwN_XpzkJ97yxiddN9bR55LHNPtFjmccpAOPTLXVAFirlqtdpYrJYJHs9ESpXHH-MnYF_J9Ghgu7Q1doskFiUEwCovu2UmhWH-LSV4zcU4BtKDA"/>
+</div>
+<p class="font-headline text-xs font-semibold truncate text-on-surface">The Complete Essays</p>
+<p class="font-label text-[10px] text-on-surface-variant truncate">Montaigne</p>
+</div>
+</div>
+</div>
+<!-- Warm Ink Scrim Layer (rgba(31, 29, 26, 0.4)) -->
+<div class="fixed inset-0 z-40 bg-[#1F1D1A]/40 transition-opacity duration-300" id="modal-scrim"></div>
+<!-- Book Details Bottom Sheet Modal -->
+<aside aria-labelledby="book-title" aria-modal="true" class="fixed inset-x-0 bottom-16 z-50 bg-[#FFFFFF] rounded-t-[12px] border-t border-[#E6E1D8] shadow-[0_-4px_24px_rgba(31,29,26,0.14)] max-w-md mx-auto flex flex-col max-h-[calc(100vh-4rem)] overflow-hidden" id="bottom-sheet" role="dialog">
+<!-- Sheet Top Bar: Tactile Drag Handle & Close Button -->
+<div class="relative w-full pt-2.5 pb-1 flex items-center justify-center shrink-0">
+<div class="w-9 h-1 rounded-full bg-[#E6E1D8]"></div>
+<button aria-label="Close book details" class="absolute right-3.5 top-2 w-8 h-8 rounded-full flex items-center justify-center text-[#6B665E] hover:text-[#1F1D1A] hover:bg-surface-container active:scale-95 transition-all" id="close-sheet-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Sheet Content -->
+<div class="overflow-y-auto px-4 pb-3 pt-0.5 space-y-3.5">
+<!-- Book Hero Section: 2:3 Cover (90px x 135px) + Typography Info Block -->
+<section class="flex gap-3.5 items-start">
+<!-- 2:3 Cover with soft 1-2px shadow and 4px radius -->
+<div class="relative shrink-0 w-[90px] h-[135px] rounded-[4px] bg-[#f5f3ef] shadow-[0_1px_3px_rgba(31,29,26,0.12),0_2px_6px_rgba(31,29,26,0.08)] overflow-hidden">
+<img alt="Meditations by Marcus Aurelius book cover" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByziK4nCxHf8DmcJOWjX_C0j1hZUv1Jv8VgJFcydxrPbqtBP6OebIGOva4uBzfssICkD_GEXxtOGY3KijGVUKvksJJGhyd_APOlaYCMucN1xB-pM3NbtE1aEAmgZVYOXaxU7Kj5dedlZR1VOlIMb0NP6HSHhnihsyemwQgMW0g1Fig3H4rjEtP_IkX_65uKb9g5chFAV3XB9g8zv0L3iMAwfdvWDxYNPQUXkfVdJPqtfPPPTdVTA"/>
+</div>
+<!-- Typography Info Block -->
+<div class="flex flex-col min-w-0 flex-1 pt-0.5">
+<h1 class="font-headline font-semibold text-[20px] text-[#1F1D1A] leading-snug tracking-tight mb-0.5" id="book-title">Meditations</h1>
+<p class="font-label text-[14px] text-[#6B665E] font-normal mb-1.5">Marcus Aurelius</p>
+<p class="font-label text-xs text-[#6B665E] tracking-tight mb-2.5">280 pages • 4.2 MB PDF • Philosophy</p>
+<div class="inline-flex items-center gap-1.5 self-start px-2 py-0.5 rounded-full bg-[#ffdbcf] text-[#752402] font-label text-[11px] font-medium">
+<span class="material-symbols-outlined text-[13px] text-[#B5532E]" style="font-variation-settings: 'FILL' 1;">auto_stories</span>
+<span>In Progress</span>
+</div>
+</div>
+</section>
+<!-- Reading Progress Box -->
+<section class="bg-[#f5f3ef] rounded-xl p-3 space-y-1.5">
+<div class="flex items-center justify-between text-xs font-label">
+<span class="font-medium text-[#1F1D1A]">Book IV • Page 142 of 280 (51%)</span>
+<span class="text-[#6B665E]">Est. 2h 15m remaining</span>
+</div>
+<!-- Thin terracotta #B5532E progress bar at 51% -->
+<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="51" class="w-full h-1.5 bg-[#e4e2de] rounded-full overflow-hidden" role="progressbar">
+<div class="h-full bg-[#B5532E] rounded-full transition-all duration-500 ease-out" style="width: 51%;"></div>
+</div>
+</section>
+<!-- Action Buttons (8px radius, 48px height) -->
+<div class="flex flex-col gap-2">
+<!-- Primary Action: Solid terracotta #B5532E background, white text -->
+<button class="w-full h-12 rounded-[8px] bg-[#B5532E] hover:bg-[#9e421e] active:scale-[0.99] text-[#FFFFFF] font-label font-semibold text-sm flex items-center justify-center gap-2 shadow-[0_1px_4px_rgba(181,83,46,0.25)] transition-all" type="button">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+<span>Continue reading</span>
+</button>
+<!-- Secondary Action: White background with 1px border #E6E1D8, ink text -->
+<button class="w-full h-12 rounded-[8px] bg-[#FFFFFF] border border-[#E6E1D8] hover:bg-[#f5f3ef] active:scale-[0.99] text-[#1F1D1A] font-label font-medium text-sm flex items-center justify-center gap-2 transition-all" id="download-btn" type="button">
+<span class="material-symbols-outlined text-[19px] text-[#B5532E]" id="download-icon">download</span>
+<span id="download-label">Download for offline (4.2 MB)</span>
+</button>
+</div>
+<!-- Option Rows (48px tap targets, 12px cards clean list) -->
+<section class="space-y-1.5 pt-0.5">
+<!-- Row 1: Add to Shelf -->
+<button class="w-full h-12 px-3.5 rounded-[12px] flex items-center justify-between bg-[#f5f3ef] hover:bg-[#eae8e4] active:bg-surface-container transition-colors group text-left border border-transparent hover:border-[#E6E1D8]" type="button">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-8 h-8 rounded-full bg-[#ffdbcf] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[#B5532E] text-[18px]">bookmarks</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label text-sm font-medium text-[#1F1D1A] truncate">Add to shelf</span>
+<span class="font-label text-[11px] text-[#6B665E] truncate">Stoicism, Classical</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[#6B665E] group-hover:translate-x-0.5 transition-transform text-[18px]">chevron_right</span>
+</button>
+<!-- Row 2: Mark as Finished Toggle -->
+<div class="w-full h-12 px-3.5 rounded-[12px] flex items-center justify-between bg-[#f5f3ef] border border-transparent">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-8 h-8 rounded-full bg-[#e4e2de] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[#6B665E] text-[18px]" id="finished-icon">check_circle</span>
+</div>
+<span class="font-label text-sm font-medium text-[#1F1D1A]">Mark as finished</span>
+</div>
+<button aria-checked="false" aria-label="Toggle finished reading status" class="w-11 h-6 rounded-full bg-[#e4e2de] p-0.5 flex items-center transition-colors" id="finished-toggle" role="switch" type="button">
+<div class="w-5 h-5 rounded-full bg-[#FFFFFF] shadow-sm transition-transform duration-200" id="toggle-thumb"></div>
+</button>
+</div>
+<!-- Row 3: View notes & marginalia (18) -->
+<button class="w-full h-12 px-3.5 rounded-[12px] flex items-center justify-between bg-[#f5f3ef] hover:bg-[#eae8e4] active:bg-surface-container transition-colors group text-left border border-transparent hover:border-[#E6E1D8]" type="button">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-8 h-8 rounded-full bg-[#e4e2de] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[#6B665E] text-[18px]">edit_note</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label text-sm font-medium text-[#1F1D1A] truncate">View notes &amp; marginalia (18)</span>
+<span class="font-label text-[11px] text-[#B5532E] font-medium">18 highlighted passages</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[#6B665E] group-hover:translate-x-0.5 transition-transform text-[18px]">chevron_right</span>
+</button>
+</section>
+</div>
+</aside>
+</div>
+<script>
+  (function initBottomSheet() {
+    const scrim = document.getElementById('modal-scrim');
+    const sheet = document.getElementById('bottom-sheet');
+    const closeBtn = document.getElementById('close-sheet-btn');
+    const downloadBtn = document.getElementById('download-btn');
+    const downloadIcon = document.getElementById('download-icon');
+    const downloadLabel = document.getElementById('download-label');
+    const finishedToggle = document.getElementById('finished-toggle');
+    const toggleThumb = document.getElementById('toggle-thumb');
+    const finishedIcon = document.getElementById('finished-icon');
+
+    let isFinished = false;
+    let isDownloaded = false;
+
+    function closeSheet() {
+      sheet.classList.add('translate-y-full');
+      scrim.classList.add('opacity-0');
+      scrim.classList.add('pointer-events-none');
+      setTimeout(() => {
+        sheet.classList.remove('translate-y-full');
+        scrim.classList.remove('opacity-0');
+        scrim.classList.remove('pointer-events-none');
+      }, 1600);
+    }
+
+    if (scrim) scrim.addEventListener('click', closeSheet);
+    if (closeBtn) closeBtn.addEventListener('click', closeSheet);
+
+    if (finishedToggle) {
+      finishedToggle.addEventListener('click', () => {
+        isFinished = !isFinished;
+        finishedToggle.setAttribute('aria-checked', String(isFinished));
+        if (isFinished) {
+          finishedToggle.classList.remove('bg-[#e4e2de]');
+          finishedToggle.classList.add('bg-[#B5532E]');
+          toggleThumb.classList.add('translate-x-5');
+          finishedIcon.classList.add('text-[#B5532E]');
+          finishedIcon.style.fontVariationSettings = "'FILL' 1";
+        } else {
+          finishedToggle.classList.remove('bg-[#B5532E]');
+          finishedToggle.classList.add('bg-[#e4e2de]');
+          toggleThumb.classList.remove('translate-x-5');
+          finishedIcon.classList.remove('text-[#B5532E]');
+          finishedIcon.style.fontVariationSettings = "'FILL' 0";
+        }
+      });
+    }
+
+    if (downloadBtn) {
+      downloadBtn.addEventListener('click', () => {
+        if (!isDownloaded) {
+          downloadLabel.textContent = 'Storing locally...';
+          downloadIcon.textContent = 'sync';
+          downloadIcon.classList.add('animate-spin');
+          setTimeout(() => {
+            isDownloaded = true;
+            downloadIcon.classList.remove('animate-spin');
+            downloadIcon.textContent = 'download_done';
+            downloadLabel.textContent = 'Available offline (4.2 MB)';
+            downloadBtn.classList.add('text-[#B5532E]');
+          }, 800);
+        }
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/95 backdrop-blur-xl border-t border-[#E6E1D8]/60 shadow-[0_-1px_10px_rgba(0,0,0,0.04)]" data-active-classes="text-secondary [&amp;&gt;div]:bg-secondary-fixed [&amp;&gt;div&gt;span]:text-secondary"><div class="flex justify-around items-center h-16 px-2"><a aria-current="page" class="flex flex-col items-center justify-center w-16 h-12 gap-0.5 transition-colors group text-[#B5532E] [&amp;&gt;div]:bg-[#ffdbcf] [&amp;&gt;div&gt;span]:text-[#B5532E]" data-path="library" href="#"><div class="px-3.5 py-0.5 rounded-full transition-colors flex items-center justify-center"><span class="material-symbols-outlined text-[22px]">local_library</span></div><span class="font-label text-[11px] font-medium tracking-tight">Library</span></a><a class="flex flex-col items-center justify-center w-16 h-12 gap-0.5 text-on-surface-variant transition-colors group" data-path="reading" href="#"><div class="px-3.5 py-0.5 rounded-full transition-colors flex items-center justify-center"><span class="material-symbols-outlined text-[22px]">menu_book</span></div><span class="font-label text-[11px] font-medium tracking-tight">Reading</span></a><a class="flex flex-col items-center justify-center w-16 h-12 gap-0.5 text-on-surface-variant transition-colors group" data-path="notes" href="#"><div class="px-3.5 py-0.5 rounded-full transition-colors flex items-center justify-center"><span class="material-symbols-outlined text-[22px]">edit_note</span></div><span class="font-label text-[11px] font-medium tracking-tight">Notes</span></a><a class="flex flex-col items-center justify-center w-16 h-12 gap-0.5 text-on-surface-variant transition-colors group" data-path="shelves" href="#"><div class="px-3.5 py-0.5 rounded-full transition-colors flex items-center justify-center"><span class="material-symbols-outlined text-[22px]">bookmarks</span></div><span class="font-label text-[11px] font-medium tracking-tight">Shelves</span></a><a class="flex flex-col items-center justify-center w-16 h-12 gap-0.5 text-on-surface-variant transition-colors group" data-path="settings" href="#"><div class="px-3.5 py-0.5 rounded-full transition-colors flex items-center justify-center"><span class="material-symbols-outlined text-[22px]">settings</span></div><span class="font-label text-[11px] font-medium tracking-tight">Settings</span></a></div></nav></body></html>

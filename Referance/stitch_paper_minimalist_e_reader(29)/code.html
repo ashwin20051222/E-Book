@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><title>Add To Shelf Sheet - E-Books</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;1,7..72,400&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary-fixed-variant": "#4f453e", "outline": "#7c766e", "surface-variant": "#e4e2de", "on-primary-fixed-variant": "#494643", "surface-dim": "#dbdad6", "on-secondary": "#ffffff", "inverse-primary": "#cbc6c1", "inverse-surface": "#30312e", "surface-container-high": "#eae8e4", "surface-container-lowest": "#ffffff", "error": "#ba1a1a", "surface-container": "#efeeea", "on-background": "#1b1c1a", "on-tertiary": "#ffffff", "on-secondary-container": "#752402", "outline-variant": "#cdc5bc", "secondary-container": "#ff8c62", "on-error-container": "#93000a", "primary": "#040302", "surface": "#fbf9f5", "secondary-fixed": "#ffdbcf", "secondary": "#9e421e", "on-primary": "#ffffff", "on-tertiary-fixed": "#221a15", "tertiary": "#070301", "tertiary-fixed": "#f0dfd6", "on-error": "#ffffff", "primary-fixed-dim": "#cbc6c1", "secondary-fixed-dim": "#ffb59c", "primary-fixed": "#e7e1dc", "surface-container-highest": "#e4e2de", "on-primary-container": "#898580", "primary-container": "#1f1d1a", "tertiary-container": "#241c17", "on-surface": "#1b1c1a", "on-surface-variant": "#4a463f", "on-secondary-fixed-variant": "#7f2b08", "inverse-on-surface": "#f2f0ed", "on-primary-fixed": "#1d1b18", "surface-tint": "#615e5a", "on-tertiary-container": "#90837b", "surface-bright": "#fbf9f5", "background": "#fbf9f5", "error-container": "#ffdad6", "surface-container-low": "#f5f3ef", "on-secondary-fixed": "#380c00", "tertiary-fixed-dim": "#d3c3bb" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: {}, fontFamily: { "headline": ["Literata"], "display": ["Literata"], "body": ["Literata"], "label": ["Inter"] }, fontSize: {} } } }</script><style>@layer base { html, body { margin: 0; padding: 0; min-height: 100%; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; } .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body text-on-surface flex flex-col min-h-screen selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(31,29,26,0.04)] pt-safe"><div class="h-14 px-3 flex items-center justify-between gap-2"><div class="flex items-center gap-1 min-w-0"><button aria-label="Go back" class="w-12 h-12 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors touch-manipulation" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[22px]">arrow_back</span></button><img alt="Minimalist flat vector-style logo mark for an e-reader app called E-Books. A calm, literary symbol made from geometric rounded shapes forming an abstract open foliate leaf-book mark in warm terracotta #B5532E on paper background #FAF8F4.. Brand logo. - Primary color: #1f1d1a
+- Font: literata
+- Mode: light
+- Roundness: rounded-md
+" class="h-7 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1XBZDzq3recAVZCbJPXEy5-G-rbCqNosasKU1HPwGuLzVRMgXtaCksALYXRpZuLvM-l5lNzjSlg87E3cKuo_slmR2NCXNaaWnAYgVVNp_-Ecm0Qp9411EbTXLIm2rDLU9qLPz2Y3KQMufotCs4ked5BiGvFJzFarW3sJGlBYkGeg_pwruBZg5VhXv7gMJ8UNj-BA3loWg6lTXfmLP3tLffZv55xIb6AC1OcVGkGv_wKtMzZXAnTML9f"/><h1 class="font-headline font-semibold text-base text-primary tracking-tight truncate pl-1">Add To Shelf Sheet</h1></div><div class="flex items-center gap-1 shrink-0"><button aria-label="Search" class="w-12 h-12 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors touch-manipulation" type="button"><span class="material-symbols-outlined text-[22px]">search</span></button><button class="h-12 px-1 flex items-center justify-center touch-manipulation" type="button"><span class="h-9 px-3 rounded-full flex items-center gap-1.5 text-secondary bg-secondary-fixed/50 hover:bg-secondary-fixed transition-colors font-label text-xs font-semibold"><span class="material-symbols-outlined text-[18px]">download</span><span>Install</span></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0 ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-14 pb-safe bg-surface"><div class="flex flex-col w-full relative min-h-full">
+<!-- Warm ink dimmed library background simulator representing long-pressed state -->
+<div class="w-full px-4 pt-3 pb-8 opacity-40 pointer-events-none select-none filter blur-[0.5px]">
+<div class="flex items-center justify-between mb-4">
+<div class="h-6 w-28 bg-surface-container-highest rounded"></div>
+<div class="h-6 w-16 bg-surface-container rounded-full"></div>
+</div>
+<div class="grid grid-cols-3 gap-3">
+<div class="flex flex-col gap-2">
+<div class="w-full aspect-[2/3] bg-surface-container-high rounded shadow-sm"></div>
+<div class="h-3 w-3/4 bg-surface-container-highest rounded"></div>
+</div>
+<div class="flex flex-col gap-2 scale-105 origin-center">
+<div class="w-full aspect-[2/3] bg-secondary-fixed rounded shadow-md ring-2 ring-secondary/40"></div>
+<div class="h-3 w-5/6 bg-secondary rounded"></div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="w-full aspect-[2/3] bg-surface-container-high rounded shadow-sm"></div>
+<div class="h-3 w-2/3 bg-surface-container-highest rounded"></div>
+</div>
+</div>
+</div>
+<!-- Warm Ink Scrim Layer (35% opacity wash) -->
+<div class="fixed inset-0 z-40 bg-[#1F1D1A]/35 backdrop-fade pointer-events-auto transition-opacity duration-200"></div>
+<!-- Bottom Sheet Container (12px top radius, solid paper white surface) -->
+<div class="fixed inset-x-0 bottom-0 z-50 flex flex-col bg-surface-container-lowest rounded-t-xl max-w-lg mx-auto shadow-2xl transition-transform duration-300 ease-out" id="shelf-bottom-sheet">
+<!-- Drag Handle Header Zone -->
+<div class="w-full pt-3 pb-2 flex flex-col items-center justify-center cursor-grab active:cursor-grabbing touch-none" id="sheet-drag-handle">
+<div class="w-10 h-1 bg-outline-variant/80 rounded-full"></div>
+</div>
+<!-- Scrollable Sheet Content -->
+<div class="flex flex-col px-4 pb-3 max-h-[636px] overflow-y-auto overscroll-contain">
+<!-- Mini Book Header Summary Card -->
+<div class="p-3 bg-surface-container-low rounded-lg flex items-center gap-3">
+<!-- 2:3 Classical Book Cover Thumbnail -->
+<div class="relative w-10 h-[60px] rounded shrink-0 overflow-hidden shadow-[0_1px_2px_rgba(31,29,26,0.12),0_2px_4px_rgba(31,29,26,0.06)] bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Minimalist classical book cover for Meditations by Marcus Aurelius, tactile cream deckle paper texture with terracotta ink letterpress typography and an engraved antique Roman laurel wreath motif." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjfjD9N4Wc7kqbrL47CrC3eyT0A0p33OqJ16_pwz7_1nypib4MiFJ6kps1Vr1f7xYPbH_OtNQNmGGsSrwLXYb2TUXUSbPeCQovEQVvPjjE0mwRExoVuRdx_yK51JpSvjxmKPGScLcDcPLyTu-luSpHuyd_68gQwxXb4Enu94u-2Jwmny05R55eNfD1v4HlJwEUgSEhqQFPuKJCPZG2fL6x_nncbOxneS4Z9bK3BaVclVjImIvTig"/>
+<div class="absolute inset-y-0 left-0 w-[2px] bg-primary/10"></div>
+</div>
+<!-- Book Meta Description -->
+<div class="flex flex-col min-w-0 flex-1">
+<h2 class="font-headline font-semibold text-base text-on-surface truncate leading-tight">Meditations</h2>
+<p class="font-label text-xs text-on-surface-variant truncate mt-0.5">Marcus Aurelius • Book IV (51%)</p>
+<div class="flex items-center gap-1 mt-1 text-[11px] font-label text-secondary font-medium tracking-wide">
+<span class="material-symbols-outlined text-[13px] leading-none text-secondary" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+<span class="truncate">Managing shelves for this volume</span>
+</div>
+</div>
+</div>
+<!-- Section Label -->
+<div class="mt-5 mb-2 px-1 flex items-center justify-between">
+<span class="font-label text-[11px] font-semibold text-on-surface-variant uppercase tracking-widest">Add to Shelves</span>
+<span class="font-label text-[11px] text-secondary font-medium" id="shelf-count-indicator">2 selected</span>
+</div>
+<!-- Shelves Multi-select List -->
+<div aria-label="Book shelves selection" class="flex flex-col gap-1" role="group">
+<!-- Shelf Item 1 (Checked) -->
+<label class="shelf-row min-h-[48px] px-3 py-2.5 rounded-lg flex items-center justify-between cursor-pointer select-none transition-colors hover:bg-surface-container-low active:bg-surface-container">
+<div class="flex items-center gap-3 min-w-0">
+<span class="w-2.5 h-2.5 rounded-full shrink-0 shadow-sm" style="background-color: #B5532E;"></span>
+<div class="flex flex-col min-w-0">
+<span class="font-label text-sm font-medium text-on-surface truncate">Stoic Foundations</span>
+<span class="font-label text-xs text-on-surface-variant">5 books</span>
+</div>
+</div>
+<div class="relative w-6 h-6 flex items-center justify-center">
+<input checked="" class="peer sr-only shelf-checkbox" data-shelf="stoic" type="checkbox"/>
+<div class="w-5 h-5 rounded bg-surface-container-high transition-all peer-checked:bg-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px] text-on-secondary opacity-0 peer-checked:opacity-100 font-bold transition-opacity">check</span>
+</div>
+</div>
+</label>
+<!-- Shelf Item 2 (Checked) -->
+<label class="shelf-row min-h-[48px] px-3 py-2.5 rounded-lg flex items-center justify-between cursor-pointer select-none transition-colors hover:bg-surface-container-low active:bg-surface-container">
+<div class="flex items-center gap-3 min-w-0">
+<span class="w-2.5 h-2.5 rounded-full shrink-0 shadow-sm" style="background-color: #A8D8A0;"></span>
+<div class="flex flex-col min-w-0">
+<span class="font-label text-sm font-medium text-on-surface truncate">Philosophy Core</span>
+<span class="font-label text-xs text-on-surface-variant">12 books</span>
+</div>
+</div>
+<div class="relative w-6 h-6 flex items-center justify-center">
+<input checked="" class="peer sr-only shelf-checkbox" data-shelf="phil-core" type="checkbox"/>
+<div class="w-5 h-5 rounded bg-surface-container-high transition-all peer-checked:bg-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px] text-on-secondary opacity-0 peer-checked:opacity-100 font-bold transition-opacity">check</span>
+</div>
+</div>
+</label>
+<!-- Shelf Item 3 (Unchecked) -->
+<label class="shelf-row min-h-[48px] px-3 py-2.5 rounded-lg flex items-center justify-between cursor-pointer select-none transition-colors hover:bg-surface-container-low active:bg-surface-container">
+<div class="flex items-center gap-3 min-w-0">
+<span class="w-2.5 h-2.5 rounded-full shrink-0 shadow-sm" style="background-color: #F6D860;"></span>
+<div class="flex flex-col min-w-0">
+<span class="font-label text-sm font-medium text-on-surface truncate">Nightstand Queue</span>
+<span class="font-label text-xs text-on-surface-variant">3 books</span>
+</div>
+</div>
+<div class="relative w-6 h-6 flex items-center justify-center">
+<input class="peer sr-only shelf-checkbox" data-shelf="nightstand" type="checkbox"/>
+<div class="w-5 h-5 rounded bg-surface-container-high transition-all peer-checked:bg-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px] text-on-secondary opacity-0 peer-checked:opacity-100 font-bold transition-opacity">check</span>
+</div>
+</div>
+</label>
+<!-- Shelf Item 4 (Unchecked) -->
+<label class="shelf-row min-h-[48px] px-3 py-2.5 rounded-lg flex items-center justify-between cursor-pointer select-none transition-colors hover:bg-surface-container-low active:bg-surface-container">
+<div class="flex items-center gap-3 min-w-0">
+<span class="w-2.5 h-2.5 rounded-full shrink-0 shadow-sm" style="background-color: #9CC7F0;"></span>
+<div class="flex flex-col min-w-0">
+<span class="font-label text-sm font-medium text-on-surface truncate">Weekend Retreat</span>
+<span class="font-label text-xs text-on-surface-variant">4 books</span>
+</div>
+</div>
+<div class="relative w-6 h-6 flex items-center justify-center">
+<input class="peer sr-only shelf-checkbox" data-shelf="weekend" type="checkbox"/>
+<div class="w-5 h-5 rounded bg-surface-container-high transition-all peer-checked:bg-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px] text-on-secondary opacity-0 peer-checked:opacity-100 font-bold transition-opacity">check</span>
+</div>
+</div>
+</label>
+<!-- Shelf Item 5 (Unchecked) -->
+<label class="shelf-row min-h-[48px] px-3 py-2.5 rounded-lg flex items-center justify-between cursor-pointer select-none transition-colors hover:bg-surface-container-low active:bg-surface-container">
+<div class="flex items-center gap-3 min-w-0">
+<span class="w-2.5 h-2.5 rounded-full shrink-0 shadow-sm" style="background-color: #F4A7B9;"></span>
+<div class="flex flex-col min-w-0">
+<span class="font-label text-sm font-medium text-on-surface truncate">Daily Contemplation</span>
+<span class="font-label text-xs text-on-surface-variant">8 books</span>
+</div>
+</div>
+<div class="relative w-6 h-6 flex items-center justify-center">
+<input class="peer sr-only shelf-checkbox" data-shelf="contemplation" type="checkbox"/>
+<div class="w-5 h-5 rounded bg-surface-container-high transition-all peer-checked:bg-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px] text-on-secondary opacity-0 peer-checked:opacity-100 font-bold transition-opacity">check</span>
+</div>
+</div>
+</label>
+</div>
+<!-- Action Row: New Shelf Trigger -->
+<button class="mt-2.5 w-full min-h-[48px] px-3 py-2 rounded-lg bg-surface-container-low/60 hover:bg-secondary-fixed/30 active:bg-secondary-fixed/50 flex items-center justify-center gap-2 text-secondary transition-all touch-manipulation group" id="btn-create-shelf" type="button">
+<span class="w-6 h-6 rounded-full bg-secondary/10 group-hover:bg-secondary/20 flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</span>
+<span class="font-label text-sm font-semibold tracking-wide">Create New Shelf</span>
+</button>
+<!-- Inline Dynamic New Shelf Creator Field (Hidden by default) -->
+<div class="hidden mt-2 p-3 bg-surface-container-low rounded-lg transition-all" id="new-shelf-input-container">
+<label class="block font-label text-xs font-semibold text-on-surface-variant mb-1.5" for="new-shelf-name">Shelf Name</label>
+<div class="flex items-center gap-2">
+<input class="flex-1 h-10 px-3 bg-surface-container-lowest rounded font-label text-sm text-on-surface outline-none focus:bg-white placeholder:text-on-surface-variant/50" id="new-shelf-name" placeholder="e.g. Classical Antiquity" type="text"/>
+<button class="h-10 px-3.5 bg-secondary text-on-secondary rounded font-label text-xs font-semibold active:opacity-90 transition-opacity shrink-0" id="btn-confirm-new-shelf" type="button">
+            Add
+          </button>
+</div>
+</div>
+</div>
+<!-- Sticky Bottom Drawer Footer -->
+<div class="w-full px-4 pt-2.5 pb-6 bg-surface-container-lowest">
+<button class="w-full h-12 bg-secondary active:bg-on-secondary-fixed-variant text-on-secondary rounded font-label text-sm font-semibold tracking-wide shadow-sm flex items-center justify-center gap-2 transition-colors touch-manipulation" id="btn-save-shelves" type="button">
+<span>Done</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const checkboxes = document.querySelectorAll('.shelf-checkbox');
+    const countIndicator = document.getElementById('shelf-count-indicator');
+    const createBtn = document.getElementById('btn-create-shelf');
+    const inputContainer = document.getElementById('new-shelf-input-container');
+    const inputField = document.getElementById('new-shelf-name');
+    const confirmBtn = document.getElementById('btn-confirm-new-shelf');
+    const doneBtn = document.getElementById('btn-save-shelves');
+
+    function updateCount() {
+      const activeCount = document.querySelectorAll('.shelf-checkbox:checked').length;
+      if (countIndicator) {
+        countIndicator.textContent = activeCount === 1 ? '1 selected' : activeCount + ' selected';
+      }
+    }
+
+    checkboxes.forEach(cb => {
+      cb.addEventListener('change', updateCount);
+    });
+
+    if (createBtn && inputContainer && inputField) {
+      createBtn.addEventListener('click', () => {
+        inputContainer.classList.toggle('hidden');
+        if (!inputContainer.classList.contains('hidden')) {
+          inputField.focus();
+        }
+      });
+    }
+
+    if (confirmBtn && inputField) {
+      confirmBtn.addEventListener('click', () => {
+        const val = inputField.value.trim();
+        if (val) {
+          inputContainer.classList.add('hidden');
+          inputField.value = '';
+          if (countIndicator) {
+            countIndicator.textContent = (document.querySelectorAll('.shelf-checkbox:checked').length + 1) + ' selected';
+          }
+        }
+      });
+    }
+
+    if (doneBtn) {
+      doneBtn.addEventListener('click', () => {
+        const sheet = document.getElementById('shelf-bottom-sheet');
+        if (sheet) {
+          sheet.style.transform = 'translateY(100%)';
+          setTimeout(() => {
+            if (window.history && window.history.length > 1) {
+              window.history.back();
+            }
+          }, 240);
+        }
+      });
+    }
+  })();
+</script></main></body></html>

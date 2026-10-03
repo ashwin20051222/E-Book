@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;1,7..72,400&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>.material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz' 24;vertical-align:middle;}@layer base{html,body{width:100%;min-height:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'on-primary-fixed': '#1d1b18', 'on-primary-fixed-variant': '#494643', 'on-secondary-fixed': '#380c00', 'primary-fixed-dim': '#cbc6c1', 'surface-container-high': '#eae8e4', 'on-secondary': '#ffffff', 'on-tertiary-fixed': '#221a15', 'on-tertiary-container': '#90837b', 'secondary-fixed': '#ffdbcf', 'surface-container-lowest': '#ffffff', 'on-secondary-fixed-variant': '#7f2b08', 'on-error-container': '#93000a', 'background': '#fbf9f5', 'surface': '#fbf9f5', 'primary-fixed': '#e7e1dc', 'tertiary': '#070301', 'on-background': '#1b1c1a', 'surface-container-low': '#f5f3ef', 'on-surface': '#1b1c1a', 'on-primary': '#ffffff', 'surface-variant': '#e4e2de', 'inverse-on-surface': '#f2f0ed', 'surface-bright': '#fbf9f5', 'surface-dim': '#dbdad6', 'inverse-surface': '#30312e', 'on-tertiary': '#ffffff', 'secondary-container': '#ff8c62', 'on-tertiary-fixed-variant': '#4f453e', 'outline': '#7c766e', 'surface-tint': '#615e5a', 'tertiary-fixed-dim': '#d3c3bb', 'surface-container-highest': '#e4e2de', 'primary': '#040302', 'tertiary-fixed': '#f0dfd6', 'error-container': '#ffdad6', 'secondary': '#9e421e', 'outline-variant': '#cdc5bc', 'error': '#ba1a1a', 'on-primary-container': '#898580', 'tertiary-container': '#241c17', 'secondary-fixed-dim': '#ffb59c', 'inverse-primary': '#cbc6c1', 'on-error': '#ffffff', 'on-secondary-container': '#752402', 'primary-container': '#1f1d1a', 'on-surface-variant': '#4a463f', 'surface-container': '#efeeea' }, borderRadius: { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, spacing: {}, fontFamily: { 'headline': ['Literata'], 'display': ['Literata'], 'body': ['Literata'], 'label': ['Inter'] }, fontSize: {} } } }</script></head><body class="bg-surface text-on-surface font-body min-h-screen flex flex-col antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl pt-safe"><div class="h-14 px-3 flex items-center justify-between"><div class="flex items-center gap-2"><img alt="Minimalist flat vector-style logo mark for an e-reader app called E-Books. A calm, literary symbol made from geometric rounded shapes forming an abstract open foliate leaf-book mark in warm terracotta #B5532E on paper background #FAF8F4.. Brand logo. - Primary color: #1f1d1a
+- Font: literata
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XBZDzq3recAVZCbJPXEy5-G-rbCqNosasKU1HPwGuLzVRMgXtaCksALYXRpZuLvM-l5lNzjSlg87E3cKuo_slmR2NCXNaaWnAYgVVNp_-Ecm0Qp9411EbTXLIm2rDLU9qLPz2Y3KQMufotCs4ked5BiGvFJzFarW3sJGlBYkGeg_pwruBZg5VhXv7gMJ8UNj-BA3loWg6lTXfmLP3tLffZv55xIb6AC1OcVGkGv_wKtMzZXAnTML9f"/><div class="flex flex-col"><span class="font-headline font-semibold text-lg text-primary leading-tight tracking-tight">E-Books</span><span class="text-[10px] font-label uppercase tracking-widest text-on-surface-variant leading-none hidden">Notes</span></div></div><div class="flex items-center gap-1"><button class="min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">search</span></button><button class="h-9 px-3 min-w-[48px] rounded-full flex items-center justify-center gap-1.5 text-secondary hover:bg-secondary-fixed/30 transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">download</span><span class="font-label text-xs font-semibold tracking-wide">Install</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-1 flex-shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 w-full bg-surface pt-14 pb-24 flex flex-col"><div class="flex flex-col w-full relative min-h-full">
+<!-- Underlying Annotations Screen Content (Dimmed beneath warm ink scrim) -->
+<div class="w-full px-4 pt-2 pb-6 space-y-4 select-none opacity-40 pointer-events-none">
+<!-- Top Annotations Summary Bar -->
+<div class="flex items-center justify-between py-2">
+<div>
+<p class="font-headline font-semibold text-lg text-primary">Annotated Folios</p>
+<p class="font-label text-xs text-on-surface-variant">84 marginalia across 5 volumes</p>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[20px]">filter_list</span>
+</div>
+</div>
+<!-- Mock Note Card 1 -->
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm space-y-2">
+<div class="flex items-center justify-between text-xs font-label text-on-surface-variant">
+<span class="font-semibold text-secondary">Meditations • Book IV, Para 3</span>
+<span>p. 72</span>
+</div>
+<p class="font-body text-base text-primary leading-relaxed bg-[#F6D860]/20 px-2 py-1 rounded">
+        “Nowhere can man find a quieter or more untroubled retreat than in his own soul.”
+      </p>
+<p class="font-label text-xs text-on-surface-variant italic">Note: Reflect on this during evening walks.</p>
+</div>
+<!-- Mock Note Card 2 -->
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm space-y-2">
+<div class="flex items-center justify-between text-xs font-label text-on-surface-variant">
+<span class="font-semibold text-secondary">Walden • Where I Lived</span>
+<span>p. 114</span>
+</div>
+<p class="font-body text-base text-primary leading-relaxed bg-[#A8D8A0]/20 px-2 py-1 rounded">
+        “I went to the woods because I wished to live deliberately, to front only the essential facts of life...”
+      </p>
+</div>
+<!-- Mock Note Card 3 -->
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm space-y-2">
+<div class="flex items-center justify-between text-xs font-label text-on-surface-variant">
+<span class="font-semibold text-secondary">Scientific Revolutions • Section II</span>
+<span>p. 23</span>
+</div>
+<p class="font-body text-base text-primary leading-relaxed bg-[#9CC7F0]/25 px-2 py-1 rounded">
+        “Discovery commences with the awareness of anomaly, with the recognition that nature has somehow violated expectations.”
+      </p>
+</div>
+</div>
+<!-- Warm Ink Scrim Layer (Unblurred ink wash: rgba(31, 29, 26, 0.35)) -->
+<div class="fixed inset-0 z-40 bg-[#1F1D1A]/35 transition-opacity duration-200" id="scrim-overlay"></div>
+<!-- Filter & Sort Bottom Sheet Modal -->
+<div class="fixed inset-x-0 bottom-16 z-50 flex flex-col max-h-[85vh] bg-surface-container-lowest rounded-t-xl shadow-2xl transition-transform duration-300 transform translate-y-0" id="bottom-sheet">
+<!-- Tactile Drag Handle -->
+<div class="w-full flex items-center justify-center pt-3 pb-1 cursor-grab active:cursor-grabbing">
+<div class="w-9 h-1 rounded-full bg-surface-container-highest"></div>
+</div>
+<!-- Sheet Header -->
+<div class="flex items-center justify-between px-5 py-2.5">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">tune</span>
+<h2 class="font-headline font-semibold text-[20px] text-primary tracking-tight">Filter &amp; Sort Notes</h2>
+</div>
+<button aria-label="Close filter sheet" class="w-12 h-12 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" id="close-sheet-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Scrollable Body with Clean Paper Section Separators -->
+<div class="flex-1 overflow-y-auto px-5 divide-y divide-surface-container-high overscroll-contain">
+<!-- Section 1: Sort by -->
+<section class="py-4 space-y-1">
+<div class="flex items-center justify-between pb-1">
+<span class="font-label text-[11px] font-semibold uppercase tracking-wider text-on-surface-variant">Sort by</span>
+<span class="font-label text-[11px] text-secondary font-medium">Order of Marginalia</span>
+</div>
+<div class="space-y-0.5">
+<!-- Radio 1: Page order (Selected) -->
+<label class="group flex items-center justify-between h-12 px-3 rounded-lg cursor-pointer hover:bg-surface-container-low transition-colors">
+<span class="font-label text-[14px] text-primary group-hover:text-secondary transition-colors">Page order</span>
+<div class="w-5 h-5 rounded-full flex items-center justify-center bg-secondary">
+<div class="w-2 h-2 rounded-full bg-surface-container-lowest"></div>
+</div>
+<input checked="" class="sr-only" name="sort_order" type="radio" value="page_order"/>
+</label>
+<!-- Radio 2: Newest first -->
+<label class="group flex items-center justify-between h-12 px-3 rounded-lg cursor-pointer hover:bg-surface-container-low transition-colors">
+<span class="font-label text-[14px] text-on-surface-variant group-hover:text-primary transition-colors">Newest first</span>
+<div class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center group-hover:bg-surface-container-highest transition-colors">
+<div class="w-2 h-2 rounded-full bg-transparent"></div>
+</div>
+<input class="sr-only" name="sort_order" type="radio" value="newest"/>
+</label>
+<!-- Radio 3: By ink tone -->
+<label class="group flex items-center justify-between h-12 px-3 rounded-lg cursor-pointer hover:bg-surface-container-low transition-colors">
+<span class="font-label text-[14px] text-on-surface-variant group-hover:text-primary transition-colors">By ink tone</span>
+<div class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center group-hover:bg-surface-container-highest transition-colors">
+<div class="w-2 h-2 rounded-full bg-transparent"></div>
+</div>
+<input class="sr-only" name="sort_order" type="radio" value="ink_tone"/>
+</label>
+<!-- Radio 4: Book title (A-Z) -->
+<label class="group flex items-center justify-between h-12 px-3 rounded-lg cursor-pointer hover:bg-surface-container-low transition-colors">
+<span class="font-label text-[14px] text-on-surface-variant group-hover:text-primary transition-colors">Book title (A–Z)</span>
+<div class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center group-hover:bg-surface-container-highest transition-colors">
+<div class="w-2 h-2 rounded-full bg-transparent"></div>
+</div>
+<input class="sr-only" name="sort_order" type="radio" value="title_az"/>
+</label>
+</div>
+</section>
+<!-- Section 2: Filter by book -->
+<section class="py-4 space-y-1">
+<div class="flex items-center justify-between pb-1">
+<span class="font-label text-[11px] font-semibold uppercase tracking-wider text-on-surface-variant">Filter by book</span>
+<span class="font-label text-[11px] text-on-surface-variant">5 Works</span>
+</div>
+<div class="space-y-0.5">
+<!-- All Books (Checked) -->
+<label class="group flex items-center justify-between h-12 px-3 rounded-lg cursor-pointer bg-surface-container-low/60 hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-5 h-5 rounded bg-secondary flex items-center justify-center text-on-secondary shadow-sm">
+<span class="material-symbols-outlined text-[16px] font-semibold">check</span>
+</div>
+<span class="font-headline text-[15px] font-medium text-primary">All books</span>
+</div>
+<span class="font-label text-xs font-semibold px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed">84</span>
+<input checked="" class="sr-only" name="book_filter" type="checkbox" value="all"/>
+</label>
+<!-- Meditations -->
+<label class="group flex items-center justify-between h-12 px-3 rounded-lg cursor-pointer hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-5 h-5 rounded bg-surface-container-high flex items-center justify-center text-transparent group-hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<span class="font-headline text-[15px] text-on-surface-variant group-hover:text-primary transition-colors">Meditations</span>
+</div>
+<span class="font-label text-xs text-on-surface-variant">18</span>
+<input class="sr-only" name="book_filter" type="checkbox" value="meditations"/>
+</label>
+<!-- Walden -->
+<label class="group flex items-center justify-between h-12 px-3 rounded-lg cursor-pointer hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-5 h-5 rounded bg-surface-container-high flex items-center justify-center text-transparent group-hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<span class="font-headline text-[15px] text-on-surface-variant group-hover:text-primary transition-colors">Walden</span>
+</div>
+<span class="font-label text-xs text-on-surface-variant">14</span>
+<input class="sr-only" name="book_filter" type="checkbox" value="walden"/>
+</label>
+<!-- The Structure of Scientific Revolutions -->
+<label class="group flex items-center justify-between h-12 px-3 rounded-lg cursor-pointer hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-5 h-5 rounded bg-surface-container-high flex items-center justify-center text-transparent group-hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<span class="font-headline text-[15px] text-on-surface-variant group-hover:text-primary transition-colors truncate max-w-[220px]">The Structure of Scientific Revolutions</span>
+</div>
+<span class="font-label text-xs text-on-surface-variant">9</span>
+<input class="sr-only" name="book_filter" type="checkbox" value="revolutions"/>
+</label>
+<!-- The Antidote -->
+<label class="group flex items-center justify-between h-12 px-3 rounded-lg cursor-pointer hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-5 h-5 rounded bg-surface-container-high flex items-center justify-center text-transparent group-hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<span class="font-headline text-[15px] text-on-surface-variant group-hover:text-primary transition-colors">The Antidote</span>
+</div>
+<span class="font-label text-xs text-on-surface-variant">12</span>
+<input class="sr-only" name="book_filter" type="checkbox" value="antidote"/>
+</label>
+<!-- The Complete Essays -->
+<label class="group flex items-center justify-between h-12 px-3 rounded-lg cursor-pointer hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-5 h-5 rounded bg-surface-container-high flex items-center justify-center text-transparent group-hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<span class="font-headline text-[15px] text-on-surface-variant group-hover:text-primary transition-colors">The Complete Essays</span>
+</div>
+<span class="font-label text-xs text-on-surface-variant">16</span>
+<input class="sr-only" name="book_filter" type="checkbox" value="essays"/>
+</label>
+</div>
+</section>
+<!-- Section 3: Filter by ink tone -->
+<section class="py-4 space-y-1 pb-6">
+<div class="flex items-center justify-between pb-1">
+<span class="font-label text-[11px] font-semibold uppercase tracking-wider text-on-surface-variant">Filter by ink tone</span>
+<span class="font-label text-[11px] text-secondary font-medium">All 4 active</span>
+</div>
+<div class="space-y-0.5">
+<!-- Core Ideas (Yellow Dot) -->
+<label class="group flex items-center justify-between h-12 px-3 rounded-lg cursor-pointer hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-5 h-5 rounded bg-secondary flex items-center justify-center text-on-secondary shadow-sm">
+<span class="material-symbols-outlined text-[16px] font-semibold">check</span>
+</div>
+<div class="w-3 h-3 rounded-full bg-[#F6D860] shadow-sm"></div>
+<span class="font-label text-[14px] text-primary font-medium">Core Ideas</span>
+</div>
+<span class="font-label text-xs text-on-surface-variant">36</span>
+<input checked="" class="sr-only" name="ink_tone" type="checkbox" value="core_ideas"/>
+</label>
+<!-- Definitions (Green Dot) -->
+<label class="group flex items-center justify-between h-12 px-3 rounded-lg cursor-pointer hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-5 h-5 rounded bg-secondary flex items-center justify-center text-on-secondary shadow-sm">
+<span class="material-symbols-outlined text-[16px] font-semibold">check</span>
+</div>
+<div class="w-3 h-3 rounded-full bg-[#A8D8A0] shadow-sm"></div>
+<span class="font-label text-[14px] text-primary font-medium">Definitions</span>
+</div>
+<span class="font-label text-xs text-on-surface-variant">21</span>
+<input checked="" class="sr-only" name="ink_tone" type="checkbox" value="definitions"/>
+</label>
+<!-- Historical (Blue Dot) -->
+<label class="group flex items-center justify-between h-12 px-3 rounded-lg cursor-pointer hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-5 h-5 rounded bg-secondary flex items-center justify-center text-on-secondary shadow-sm">
+<span class="material-symbols-outlined text-[16px] font-semibold">check</span>
+</div>
+<div class="w-3 h-3 rounded-full bg-[#9CC7F0] shadow-sm"></div>
+<span class="font-label text-[14px] text-primary font-medium">Historical</span>
+</div>
+<span class="font-label text-xs text-on-surface-variant">15</span>
+<input checked="" class="sr-only" name="ink_tone" type="checkbox" value="historical"/>
+</label>
+<!-- Disagreements (Pink Dot) -->
+<label class="group flex items-center justify-between h-12 px-3 rounded-lg cursor-pointer hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-5 h-5 rounded bg-secondary flex items-center justify-center text-on-secondary shadow-sm">
+<span class="material-symbols-outlined text-[16px] font-semibold">check</span>
+</div>
+<div class="w-3 h-3 rounded-full bg-[#F4A7B9] shadow-sm"></div>
+<span class="font-label text-[14px] text-primary font-medium">Disagreements</span>
+</div>
+<span class="font-label text-xs text-on-surface-variant">12</span>
+<input checked="" class="sr-only" name="ink_tone" type="checkbox" value="disagreements"/>
+</label>
+</div>
+</section>
+</div>
+<!-- Sticky Bottom Action Footer (Clean elevation with subtle top shadow wash) -->
+<div class="sticky bottom-0 bg-surface-container-lowest px-5 py-3 shadow-[0_-4px_16px_rgba(31,29,26,0.06)] flex items-center justify-between gap-4">
+<button class="h-12 px-3 rounded-md text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center font-label text-[14px] font-medium active:scale-95" id="reset-filters-btn" type="button">
+        Reset filters
+      </button>
+<button class="flex-1 h-12 rounded-lg bg-secondary text-on-secondary hover:bg-on-secondary-fixed-variant active:bg-[#7f2b08] font-label text-[14px] font-semibold tracking-wide flex items-center justify-center gap-2 shadow-sm transition-all duration-150 active:scale-[0.99]" id="apply-filters-btn" type="button">
+<span>Show 84 notes</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  (() => {
+    const sheet = document.getElementById('bottom-sheet');
+    const scrim = document.getElementById('scrim-overlay');
+    const closeBtn = document.getElementById('close-sheet-btn');
+    const applyBtn = document.getElementById('apply-filters-btn');
+    const resetBtn = document.getElementById('reset-filters-btn');
+
+    function closeSheet() {
+      if (!sheet || !scrim) return;
+      sheet.classList.add('translate-y-full');
+      scrim.classList.add('opacity-0');
+      scrim.classList.add('pointer-events-none');
+      setTimeout(() => {
+        sheet.classList.remove('translate-y-full');
+        scrim.classList.remove('opacity-0');
+        scrim.classList.remove('pointer-events-none');
+      }, 900);
+    }
+
+    if (closeBtn) closeBtn.addEventListener('click', closeSheet);
+    if (scrim) scrim.addEventListener('click', closeSheet);
+    if (applyBtn) {
+      applyBtn.addEventListener('click', () => {
+        applyBtn.classList.add('scale-95');
+        setTimeout(() => applyBtn.classList.remove('scale-95'), 120);
+        closeSheet();
+      });
+    }
+
+    if (resetBtn) {
+      resetBtn.addEventListener('click', () => {
+        const radios = document.querySelectorAll('input[name="sort_order"]');
+        if (radios.length > 0) radios[0].checked = true;
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 left-0 right-0 z-50 bg-surface-container-lowest/95 backdrop-blur-xl pb-safe shadow-[0_-1px_12px_rgba(31,29,26,0.05)]" data-active-classes="text-secondary"><div class="flex items-center justify-around h-16 px-1"><a class="flex-1 flex flex-col items-center justify-center min-h-[48px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="library" href="#"><div class="flex items-center justify-center h-8 px-4 rounded-full transition-all"><span class="material-symbols-outlined text-[22px]">local_library</span></div><span class="font-label text-[11px] font-medium tracking-tight mt-0.5">Library</span></a><a class="flex-1 flex flex-col items-center justify-center min-h-[48px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="reading" href="#"><div class="flex items-center justify-center h-8 px-4 rounded-full transition-all"><span class="material-symbols-outlined text-[22px]">menu_book</span></div><span class="font-label text-[11px] font-medium tracking-tight mt-0.5">Reading</span></a><a aria-current="page" class="flex-1 flex flex-col items-center justify-center min-h-[48px] py-1 text-secondary" data-path="notes" href="#"><div class="flex items-center justify-center h-8 px-4 rounded-full bg-secondary-fixed/50 transition-all"><span class="material-symbols-outlined text-[22px]">edit_note</span></div><span class="font-label text-[11px] font-semibold tracking-tight mt-0.5 text-secondary">Notes</span></a><a class="flex-1 flex flex-col items-center justify-center min-h-[48px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="shelves" href="#"><div class="flex items-center justify-center h-8 px-4 rounded-full transition-all"><span class="material-symbols-outlined text-[22px]">shelves</span></div><span class="font-label text-[11px] font-medium tracking-tight mt-0.5">Shelves</span></a><a class="flex-1 flex flex-col items-center justify-center min-h-[48px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="settings" href="#"><div class="flex items-center justify-center h-8 px-4 rounded-full transition-all"><span class="material-symbols-outlined text-[22px]">settings</span></div><span class="font-label text-[11px] font-medium tracking-tight mt-0.5">Settings</span></a></div></nav></body></html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;1,7..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-tint": "#615e5a", "inverse-on-surface": "#f2f0ed", "error": "#ba1a1a", "on-secondary-fixed-variant": "#7f2b08", "surface-container-low": "#f5f3ef", "primary": "#040302", "tertiary-container": "#241c17", "on-primary-fixed": "#1d1b18", "secondary-fixed-dim": "#ffb59c", "outline-variant": "#cdc5bc", "surface-bright": "#fbf9f5", "surface": "#fbf9f5", "surface-container-lowest": "#ffffff", "inverse-primary": "#cbc6c1", "primary-fixed": "#e7e1dc", "outline": "#7c766e", "inverse-surface": "#30312e", "surface-container-high": "#eae8e4", "on-error-container": "#93000a", "secondary-container": "#ff8c62", "surface-variant": "#e4e2de", "tertiary": "#070301", "primary-container": "#1f1d1a", "on-primary-container": "#898580", "on-primary": "#ffffff", "on-tertiary-fixed-variant": "#4f453e", "on-surface-variant": "#4a463f", "surface-container": "#efeeea", "on-tertiary-fixed": "#221a15", "on-surface": "#1b1c1a", "secondary": "#9e421e", "on-error": "#ffffff", "on-primary-fixed-variant": "#494643", "on-secondary-fixed": "#380c00", "tertiary-fixed-dim": "#d3c3bb", "surface-dim": "#dbdad6", "secondary-fixed": "#ffdbcf", "surface-container-highest": "#e4e2de", "on-tertiary": "#ffffff", "error-container": "#ffdad6", "primary-fixed-dim": "#cbc6c1", "tertiary-fixed": "#f0dfd6", "on-secondary-container": "#752402", "on-tertiary-container": "#90837b", "on-secondary": "#ffffff", "on-background": "#1b1c1a", "background": "#fbf9f5" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "2rem", "margin-desktop-reading": "auto", "gutter-mobile": "1rem", "margin-mobile": "1rem", "space-sm": "0.5rem", "space-md": "1rem", "space-xs": "0.25rem", "gutter": "1.5rem", "space-2xl": "3rem", "space-lg": "1.5rem", "margin": "2rem" }, "fontFamily": { "label-md": ["Inter"], "headline-xl": ["Literata"], "headline-xl-mobile": ["Literata"], "headline-sm": ["Literata"], "headline-lg-mobile": ["Literata"], "body-reading-md": ["Literata"], "ui-body": ["Inter"], "headline-lg": ["Literata"], "ui-body-strong": ["Inter"], "label-sm": ["Inter"], "headline-md": ["Literata"], "body-reading-lg": ["Literata"], "label-lg": ["Inter"], "body-reading-sm": ["Literata"] }, "fontSize": { "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-xl": ["40px", { "lineHeight": "52px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "26px", "fontWeight": "500" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "body-reading-md": ["17px", { "lineHeight": "29px", "letterSpacing": "0.005em", "fontWeight": "400" }], "ui-body": ["15px", { "lineHeight": "22px", "fontWeight": "400" }], "headline-lg": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "ui-body-strong": ["15px", { "lineHeight": "22px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "30px", "fontWeight": "500" }], "body-reading-lg": ["20px", { "lineHeight": "34px", "letterSpacing": "0.005em", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }], "body-reading-sm": ["15px", { "lineHeight": "24px", "fontWeight": "400" }] } } } };</script></head><body class="bg-surface font-ui-body text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between border-r border-outline-variant/30"><div class="flex flex-col pt-space-md"><div class="flex items-center gap-space-sm px-space-lg h-12 mb-space-md"><span class="font-label-sm text-label-sm tracking-widest uppercase text-on-surface-variant">Shelf Catalog</span></div><nav class="flex flex-col gap-space-xs px-space-md" data-active-classes="bg-secondary-fixed text-on-secondary-fixed font-ui-body-strong"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg min-h-[48px] text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="library" href="#"><span class="material-symbols-outlined text-outline">auto_stories</span><span class="font-ui-body text-ui-body">Library</span></a><a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg min-h-[48px] transition-colors bg-secondary-fixed text-on-secondary-fixed font-ui-body-strong" data-path="reading-now" href="#"><span class="material-symbols-outlined text-outline">menu_book</span><span class="font-ui-body text-ui-body">Reading Now</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg min-h-[48px] text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="annotations-and-highlights" href="#"><span class="material-symbols-outlined text-outline">edit_note</span><span class="font-ui-body text-ui-body">Annotations &amp; Highlights</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg min-h-[48px] text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="collections-and-shelves" href="#"><span class="material-symbols-outlined text-outline">folder_special</span><span class="font-ui-body text-ui-body">Collections &amp; Shelves</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg min-h-[48px] text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="settings-and-display" href="#"><span class="material-symbols-outlined text-outline">tune</span><span class="font-ui-body text-ui-body">Settings &amp; Display</span></a></nav></div><div class="p-space-lg border-t border-outline-variant/30 flex flex-col gap-space-sm"><div class="flex items-center justify-between text-on-surface-variant"><span class="font-label-sm text-label-sm">Daily Reading</span><span class="font-label-sm text-label-sm text-secondary font-semibold">42m / 60m</span></div><div class="w-full h-1 bg-surface-container-highest rounded-full overflow-hidden"><div class="h-full bg-secondary rounded-full w-[70%]"></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/90 backdrop-blur-md z-40 border-b border-outline-variant/30"><div class="h-16 w-full px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm font-semibold tracking-tight text-primary">E-Books</span></div><div class="relative flex items-center min-w-[280px] lg:min-w-[340px]"><span class="material-symbols-outlined absolute left-space-md text-outline text-[20px] pointer-events-none">search</span><input class="w-full h-11 pl-11 pr-space-md bg-surface-container-lowest border border-outline-variant/40 rounded-xl font-ui-body text-ui-body text-on-surface placeholder:text-outline-variant focus:outline-none focus:border-secondary transition-colors" placeholder="Search titles, authors, passages..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="flex items-center bg-surface-container-lowest border border-outline-variant/40 rounded-full p-1 gap-1"><button class="w-7 h-7 rounded-full bg-surface-bright border-2 border-secondary flex items-center justify-center" title="Paper Mode" type="button"><span class="sr-only">Paper</span></button><button class="w-7 h-7 rounded-full bg-[#f3e7d0] border border-outline-variant/30 flex items-center justify-center" title="Sepia Mode" type="button"><span class="sr-only">Sepia</span></button><button class="w-7 h-7 rounded-full bg-[#1b1a18] border border-outline-variant/30 flex items-center justify-center" title="Dark Mode" type="button"><span class="sr-only">Dark</span></button><button class="w-7 h-7 rounded-full bg-[#000000] border border-outline-variant/30 flex items-center justify-center" title="OLED Mode" type="button"><span class="sr-only">OLED</span></button></div><button class="w-11 h-11 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" title="Toggle Focus Mode" type="button"><span class="material-symbols-outlined text-[22px]">fullscreen</span></button><div class="h-6 w-[1px] bg-outline-variant/30"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="hidden sm:flex flex-col text-right"><span class="font-label-sm text-label-sm font-semibold text-on-surface">Reader</span><span class="font-label-sm text-label-sm text-secondary">42m today</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WAfjIgtjFuDM9Z-381-Tql9U-YXP_jkgDKxGu1vGw6mxRPkkLgBzCrBaW3fYXvGIJTYXesjfWrkD5jvf9ImVlkYyIO1425uktQcZmbW2uoFBE_WzT1Xw9MfR8N9WZdVAYxC69LRVqMmdq2dgbPUA8Cd4enO7lqib2gq8QHxQD9oiopfvxj9KrjJ8sKzcfBEQEYg08pOLBWbIHlwCfPzYb5dJYlJl6YQpGmjBbfS4SxVIGfNxmcna_U"/></div></div></div></header><main class="relative pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="relative w-full min-h-[calc(100vh-4rem)] flex flex-col justify-between py-space-xl px-space-md lg:px-space-2xl bg-surface select-none" id="reading-root">
+<!-- Ambient Subtle Paper Spine Glow Effect behind pages -->
+<div class="absolute inset-0 pointer-events-none flex items-center justify-center opacity-40">
+<div class="w-[1040px] h-[780px] bg-surface-container-high/60 blur-3xl rounded-full"></div>
+</div>
+<!-- Top Chapter Breadcrumb Bar -->
+<div class="relative z-10 w-full max-w-5xl mx-auto flex items-center justify-between px-space-md mb-space-lg text-on-surface-variant/80">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">menu_book</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant font-medium">Book IV  ·  Marcus Aurelius  ·  Meditations</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="font-label-sm text-label-sm text-outline">Section 3  ·  Page 142</span>
+<button class="flex items-center justify-center w-8 h-8 rounded-lg text-on-surface-variant hover:text-secondary hover:bg-surface-container transition-colors" id="bookmark-toggle" title="Bookmark this page" type="button">
+<span class="material-symbols-outlined text-[20px] text-secondary" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+</button>
+</div>
+</div>
+<!-- Main Dual-Page Tactile Book Spread Container -->
+<div class="relative z-10 w-full max-w-5xl mx-auto flex-1 flex flex-col lg:flex-row shadow-sm bg-surface-container-lowest rounded-xl overflow-hidden min-h-[640px]">
+<!-- Subtle Spine Shadow / Center Crease Indicator -->
+<div class="hidden lg:block absolute left-1/2 top-0 bottom-0 w-[1px] bg-outline-variant/30 z-20 pointer-events-none shadow-[0_0_8px_rgba(31,29,26,0.08)]"></div>
+<!-- Left Leaf (Page 142) -->
+<section class="flex-1 p-space-xl lg:p-space-2xl flex flex-col justify-between relative bg-surface-bright/50">
+<div>
+<!-- Running Page Header -->
+<div class="flex items-center justify-between border-b border-outline-variant/20 pb-space-sm mb-space-xl">
+<span class="font-label-sm text-label-sm text-outline tracking-wider uppercase">Book IV · On the Retreat Within</span>
+<span class="font-label-sm text-label-sm text-outline">142</span>
+</div>
+<!-- Section Heading -->
+<h2 class="font-headline-md text-headline-md text-primary mb-space-lg tracking-tight font-serif">
+            § 3. The Unshakable Citadel
+          </h2>
+<!-- Main Reading Body Text -->
+<div class="font-body-reading-md text-body-reading-md text-on-surface space-y-space-md select-text leading-relaxed">
+<p>
+              Men look for retreats for themselves, the country cottages, shores, and mountains. You too are especially wont to yearn for such things. But this is the work of an ordinary nature, since you may at any hour you please retreat into yourself.
+            </p>
+<!-- Highlighted Passages with Interactive Context Flyout -->
+<div class="relative inline-block my-space-xs">
+<mark class="bg-[#F6D860]/40 px-1 py-0.5 rounded cursor-pointer text-on-surface transition-colors duration-150" id="highlight-target">
+                For nowhere does a man retire with more quietness or freedom than into his own soul;
+              </mark>
+<!-- Popover Toolbar for Highlighted Passage -->
+<div class="absolute -top-16 left-0 z-30 flex items-center bg-primary-container text-on-primary rounded-xl px-space-sm py-space-xs shadow-md whitespace-nowrap gap-space-xs animate-in fade-in duration-200" id="highlight-tooltip">
+<!-- Color Tints -->
+<div class="flex items-center gap-1.5 px-space-xs">
+<button class="w-5 h-5 rounded-full bg-[#F6D860] hover:scale-110 transition-transform ring-2 ring-white/50" title="Soft Gold" type="button"></button>
+<button class="w-5 h-5 rounded-full bg-[#A8D8A0] hover:scale-110 transition-transform" title="Sage Green" type="button"></button>
+<button class="w-5 h-5 rounded-full bg-[#9CC7F0] hover:scale-110 transition-transform" title="Atmospheric Blue" type="button"></button>
+<button class="w-5 h-5 rounded-full bg-[#F4A7B9] hover:scale-110 transition-transform" title="Rose Quartz" type="button"></button>
+</div>
+<div class="w-[1px] h-4 bg-outline-variant/40 mx-1"></div>
+<!-- Action Buttons -->
+<button class="flex items-center gap-1 px-2 py-1 text-label-sm font-label-sm rounded hover:bg-surface-container-high/20 transition-colors text-surface-bright" type="button">
+<span class="material-symbols-outlined text-[15px]">content_copy</span>
+<span>Copy</span>
+</button>
+<button class="flex items-center gap-1 px-2 py-1 text-label-sm font-label-sm rounded hover:bg-surface-container-high/20 transition-colors text-surface-bright" type="button">
+<span class="material-symbols-outlined text-[15px]">edit_note</span>
+<span>Note</span>
+</button>
+<button class="flex items-center gap-1 px-2 py-1 text-label-sm font-label-sm rounded hover:bg-surface-container-high/20 transition-colors text-surface-bright" type="button">
+<span class="material-symbols-outlined text-[15px]">dictionary</span>
+<span>Define</span>
+</button>
+<!-- Tail arrow -->
+<div class="absolute -bottom-1.5 left-6 w-3 h-3 bg-primary-container rotate-45 pointer-events-none"></div>
+</div>
+</div>
+<p class="inline">
+              especially if he has within him thoughts of such a nature that by looking into them he immediately finds himself in complete contentment: and by contentment I mean nothing other than well-ordered composure.
+            </p>
+<p class="mt-space-md">
+              Constantly give yourself this retreat, and renew yourself. Let your principles be brief and fundamental, which as soon as you have recurred to them will be sufficient to cleanse the soul and send you back without any irritation to the life whereto you return.
+            </p>
+</div>
+</div>
+<!-- Left Leaf Page Footer -->
+<div class="pt-space-lg flex items-center justify-between text-outline text-label-sm font-label-sm">
+<span>Chapter 4</span>
+<span class="text-secondary font-semibold">142</span>
+</div>
+</section>
+<!-- Right Leaf (Page 143) -->
+<section class="flex-1 p-space-xl lg:p-space-2xl flex flex-col justify-between relative bg-surface-container-lowest">
+<div>
+<!-- Running Page Header -->
+<div class="flex items-center justify-between border-b border-outline-variant/20 pb-space-sm mb-space-xl">
+<span class="font-label-sm text-label-sm text-outline">Meditations · Marcus Aurelius</span>
+<span class="font-label-sm text-label-sm text-outline">143</span>
+</div>
+<!-- Content with Marginalia Note Integration -->
+<div class="font-body-reading-md text-body-reading-md text-on-surface space-y-space-md select-text leading-relaxed">
+<p>
+              Remember that all things are mere opinion, and opinion rests with yourself. Eliminate it whenever you will, and then, as if you had doubled a cape, there will be calm, quiet water, and a sheltered bay without a wave.
+            </p>
+<!-- Marginalia Container with Callout Anchor -->
+<div class="relative p-space-md my-space-md bg-secondary-fixed/30 rounded-lg">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5 shrink-0">history_edu</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-on-secondary-fixed-variant uppercase tracking-wider">Marginal Note · Added Yesterday</span>
+<p class="font-ui-body text-label-lg text-on-surface-variant mt-0.5">
+                    "The inner citadel metaphor applied to civic duty: the quiet center is not an escape from society, but preparation to endure it with generosity."
+                  </p>
+</div>
+</div>
+</div>
+<p>
+              Whatever may happen to you, it was prepared for you from all eternity; and the implication of causes was from eternity spinning the thread of your being, and of that which is incident to it.
+            </p>
+<p>
+              Whether the universe is a concourse of atoms, or Nature is a system, let this first be established: that I am a part of the whole which is governed by Nature.
+            </p>
+</div>
+</div>
+<!-- Right Leaf Page Footer -->
+<div class="pt-space-lg flex items-center justify-between text-outline text-label-sm font-label-sm">
+<span class="text-outline-variant">G. Long Translation (1862)</span>
+<span class="text-secondary font-semibold">143</span>
+</div>
+</section>
+</div>
+<!-- Ergonomic Bottom Floating Reader Pill Control Bar -->
+<div class="relative z-30 w-full max-w-3xl mx-auto mt-space-lg select-none">
+<div class="bg-surface-container-lowest/95 backdrop-blur-md rounded-2xl p-space-sm shadow-md flex flex-col gap-space-xs">
+<!-- Scrubber Progress Bar and Chapter Indicator -->
+<div class="flex items-center gap-space-md px-space-md pt-space-xs">
+<!-- Stepper Previous -->
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" id="prev-page" title="Previous Page" type="button">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+<!-- Slider / Progress Bar -->
+<div class="flex-1 flex flex-col gap-1">
+<div class="flex justify-between items-center text-label-sm font-label-sm text-on-surface-variant">
+<span>Ch. IV: Self-Sovereignty</span>
+<span class="font-semibold text-primary" id="page-indicator">142-143 of 280 (51%)</span>
+</div>
+<div class="relative w-full h-1.5 bg-surface-container rounded-full cursor-pointer flex items-center group" id="progress-track">
+<div class="h-full bg-secondary rounded-full" style="width: 51%"></div>
+<div class="absolute left-[51%] -ml-1.5 w-3 h-3 bg-secondary rounded-full shadow-sm opacity-90 group-hover:scale-125 transition-transform"></div>
+</div>
+</div>
+<!-- Stepper Next -->
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" id="next-page" title="Next Page" type="button">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+<!-- Quick Access Control Ribbon -->
+<div class="flex items-center justify-between px-space-sm pt-space-xs border-t border-outline-variant/20 mt-1">
+<!-- Typography & Spacing Controls -->
+<div class="flex items-center gap-space-xs">
+<!-- Font Sizer -->
+<div class="flex items-center bg-surface-container-low rounded-lg p-0.5">
+<button class="w-7 h-7 flex items-center justify-center rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" id="font-decrease" title="Decrease font size" type="button">
+<span class="font-ui-body font-semibold text-[13px]">A-</span>
+</button>
+<div class="w-[1px] h-3 bg-outline-variant/30"></div>
+<button class="w-7 h-7 flex items-center justify-center rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" id="font-increase" title="Increase font size" type="button">
+<span class="font-ui-body font-semibold text-[15px]">A+</span>
+</button>
+</div>
+<!-- Font Family Selector Pill -->
+<button class="px-space-sm py-1 rounded-lg bg-surface-container-low text-label-sm font-label-sm text-on-surface hover:bg-surface-container transition-colors flex items-center gap-1" id="font-family-toggle" type="button">
+<span class="material-symbols-outlined text-[16px] text-outline">text_fields</span>
+<span>Literata</span>
+</button>
+<!-- Spread / Layout Toggle (Single vs Dual) -->
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" id="layout-toggle" title="Toggle Single / Spread View" type="button">
+<span class="material-symbols-outlined text-[19px]">auto_stories</span>
+</button>
+</div>
+<!-- Color Palettes / Paper Types -->
+<div class="flex items-center bg-surface-container-low rounded-full p-1 gap-1.5">
+<button class="w-6 h-6 rounded-full bg-[#FAF8F4] ring-2 ring-secondary flex items-center justify-center shadow-xs transition-transform active:scale-95" id="theme-paper" title="Paper Stock (#FAF8F4)" type="button">
+<span class="sr-only">Paper</span>
+</button>
+<button class="w-6 h-6 rounded-full bg-[#F3E7D0] hover:ring-1 hover:ring-outline transition-transform active:scale-95" id="theme-sepia" title="Warm Sepia (#F3E7D0)" type="button">
+<span class="sr-only">Sepia</span>
+</button>
+<button class="w-6 h-6 rounded-full bg-[#1B1A18] hover:ring-1 hover:ring-outline transition-transform active:scale-95" id="theme-dark" title="E-Ink Midnight (#1B1A18)" type="button">
+<span class="sr-only">Dark</span>
+</button>
+<button class="w-6 h-6 rounded-full bg-[#000000] hover:ring-1 hover:ring-outline transition-transform active:scale-95" id="theme-oled" title="True Pitch Black (#000000)" type="button">
+<span class="sr-only">OLED</span>
+</button>
+</div>
+<!-- Distraction Free Mode & Settings Hub -->
+<div class="flex items-center gap-space-xs">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" id="btn-toc" title="Table of Contents" type="button">
+<span class="material-symbols-outlined text-[20px]">format_list_bulleted</span>
+</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors relative" id="btn-annotations" title="View Annotations" type="button">
+<span class="material-symbols-outlined text-[20px]">rate_review</span>
+<span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-secondary"></span>
+</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-secondary hover:bg-surface-container transition-colors" id="btn-zen" title="Distraction-Free Zen View" type="button">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+    // Micro-interactions for authentic reading simulation
+    const highlightTarget = document.getElementById('highlight-target');
+    const highlightTooltip = document.getElementById('highlight-tooltip');
+    const bookmarkToggle = document.getElementById('bookmark-toggle');
+    const zenBtn = document.getElementById('btn-zen');
+    const prevPageBtn = document.getElementById('prev-page');
+    const nextPageBtn = document.getElementById('next-page');
+    const pageIndicator = document.getElementById('page-indicator');
+
+    let isBookmarked = true;
+    let isZen = false;
+    let currentPage = 142;
+
+    // Toggle highlight menu
+    if (highlightTarget && highlightTooltip) {
+      highlightTarget.addEventListener('click', (e) => {
+        e.stopPropagation();
+        highlightTooltip.classList.toggle('hidden');
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!highlightTooltip.contains(e.target) && e.target !== highlightTarget) {
+          highlightTooltip.classList.add('hidden');
+        }
+      });
+    }
+
+    // Bookmark indicator
+    if (bookmarkToggle) {
+      bookmarkToggle.addEventListener('click', () => {
+        isBookmarked = !isBookmarked;
+        const icon = bookmarkToggle.querySelector('.material-symbols-outlined');
+        if (isBookmarked) {
+          icon.style.fontVariationSettings = "'FILL' 1";
+          icon.classList.add('text-secondary');
+          icon.classList.remove('text-outline');
+        } else {
+          icon.style.fontVariationSettings = "'FILL' 0";
+          icon.classList.remove('text-secondary');
+          icon.classList.add('text-outline');
+        }
+      });
+    }
+
+    // Zen distraction-free toggle
+    if (zenBtn) {
+      zenBtn.addEventListener('click', () => {
+        isZen = !isZen;
+        const controls = document.querySelector('#reading-root > .relative.z-30');
+        const header = document.querySelector('#reading-root > .relative.z-10:first-of-type');
+        if (isZen) {
+          controls.style.opacity = '0.2';
+          controls.style.transition = 'opacity 0.3s ease';
+          controls.addEventListener('mouseenter', () => controls.style.opacity = '1');
+          controls.addEventListener('mouseleave', () => controls.style.opacity = '0.2');
+          zenBtn.classList.add('text-secondary');
+        } else {
+          controls.style.opacity = '1';
+          zenBtn.classList.remove('text-secondary');
+        }
+      });
+    }
+
+    // Next / Previous navigation simulation
+    function updatePage(delta) {
+      currentPage = Math.max(1, Math.min(278, currentPage + delta));
+      if (pageIndicator) {
+        pageIndicator.textContent = `${currentPage}-${currentPage + 1} of 280 (${Math.round((currentPage / 280) * 100)}%)`;
+      }
+    }
+
+    if (prevPageBtn) prevPageBtn.addEventListener('click', () => updatePage(-2));
+    if (nextPageBtn) nextPageBtn.addEventListener('click', () => updatePage(2));
+
+    // Keyboard navigation (Left / Right arrow for turning paper leaves)
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') updatePage(2);
+      if (e.key === 'ArrowLeft') updatePage(-2);
+    });
+  </script>
+</div></main></div></body></html>

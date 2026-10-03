@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;1,7..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-tint": "#615e5a", "inverse-on-surface": "#f2f0ed", "error": "#ba1a1a", "on-secondary-fixed-variant": "#7f2b08", "surface-container-low": "#f5f3ef", "primary": "#040302", "tertiary-container": "#241c17", "on-primary-fixed": "#1d1b18", "secondary-fixed-dim": "#ffb59c", "outline-variant": "#cdc5bc", "surface-bright": "#fbf9f5", "surface": "#fbf9f5", "surface-container-lowest": "#ffffff", "inverse-primary": "#cbc6c1", "primary-fixed": "#e7e1dc", "outline": "#7c766e", "inverse-surface": "#30312e", "surface-container-high": "#eae8e4", "on-error-container": "#93000a", "secondary-container": "#ff8c62", "surface-variant": "#e4e2de", "tertiary": "#070301", "primary-container": "#1f1d1a", "on-primary-container": "#898580", "on-primary": "#ffffff", "on-tertiary-fixed-variant": "#4f453e", "on-surface-variant": "#4a463f", "surface-container": "#efeeea", "on-tertiary-fixed": "#221a15", "on-surface": "#1b1c1a", "secondary": "#9e421e", "on-error": "#ffffff", "on-primary-fixed-variant": "#494643", "on-secondary-fixed": "#380c00", "tertiary-fixed-dim": "#d3c3bb", "surface-dim": "#dbdad6", "secondary-fixed": "#ffdbcf", "surface-container-highest": "#e4e2de", "on-tertiary": "#ffffff", "error-container": "#ffdad6", "primary-fixed-dim": "#cbc6c1", "tertiary-fixed": "#f0dfd6", "on-secondary-container": "#752402", "on-tertiary-container": "#90837b", "on-secondary": "#ffffff", "on-background": "#1b1c1a", "background": "#fbf9f5" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "2rem", "margin-desktop-reading": "auto", "gutter-mobile": "1rem", "margin-mobile": "1rem", "space-sm": "0.5rem", "space-md": "1rem", "space-xs": "0.25rem", "gutter": "1.5rem", "space-2xl": "3rem", "space-lg": "1.5rem", "margin": "2rem" }, "fontFamily": { "label-md": ["Inter"], "headline-xl": ["Literata"], "headline-xl-mobile": ["Literata"], "headline-sm": ["Literata"], "headline-lg-mobile": ["Literata"], "body-reading-md": ["Literata"], "ui-body": ["Inter"], "headline-lg": ["Literata"], "ui-body-strong": ["Inter"], "label-sm": ["Inter"], "headline-md": ["Literata"], "body-reading-lg": ["Literata"], "label-lg": ["Inter"], "body-reading-sm": ["Literata"] }, "fontSize": { "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-xl": ["40px", { "lineHeight": "52px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "26px", "fontWeight": "500" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "body-reading-md": ["17px", { "lineHeight": "29px", "letterSpacing": "0.005em", "fontWeight": "400" }], "ui-body": ["15px", { "lineHeight": "22px", "fontWeight": "400" }], "headline-lg": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "ui-body-strong": ["15px", { "lineHeight": "22px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "30px", "fontWeight": "500" }], "body-reading-lg": ["20px", { "lineHeight": "34px", "letterSpacing": "0.005em", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }], "body-reading-sm": ["15px", { "lineHeight": "24px", "fontWeight": "400" }] } } } };</script></head><body class="bg-surface font-ui-body text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between border-r border-outline-variant/30"><div class="flex flex-col pt-space-md"><div class="flex items-center gap-space-sm px-space-lg h-12 mb-space-md"><span class="font-label-sm text-label-sm tracking-widest uppercase text-on-surface-variant">Shelf Catalog</span></div><nav class="flex flex-col gap-space-xs px-space-md" data-active-classes="bg-secondary-fixed text-on-secondary-fixed font-ui-body-strong"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg min-h-[48px] text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="library" href="#"><span class="material-symbols-outlined text-outline">auto_stories</span><span class="font-ui-body text-ui-body">Library</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg min-h-[48px] text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="reading-now" href="#"><span class="material-symbols-outlined text-outline">menu_book</span><span class="font-ui-body text-ui-body">Reading Now</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg min-h-[48px] text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="annotations-and-highlights" href="#"><span class="material-symbols-outlined text-outline">edit_note</span><span class="font-ui-body text-ui-body">Annotations &amp; Highlights</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg min-h-[48px] text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="collections-and-shelves" href="#"><span class="material-symbols-outlined text-outline">folder_special</span><span class="font-ui-body text-ui-body">Collections &amp; Shelves</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg min-h-[48px] text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="settings-and-display" href="#"><span class="material-symbols-outlined text-outline">tune</span><span class="font-ui-body text-ui-body">Settings &amp; Display</span></a></nav></div><div class="p-space-lg border-t border-outline-variant/30 flex flex-col gap-space-sm"><div class="flex items-center justify-between text-on-surface-variant"><span class="font-label-sm text-label-sm">Daily Reading</span><span class="font-label-sm text-label-sm text-secondary font-semibold">42m / 60m</span></div><div class="w-full h-1 bg-surface-container-highest rounded-full overflow-hidden"><div class="h-full bg-secondary rounded-full w-[70%]"></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/90 backdrop-blur-md z-40 border-b border-outline-variant/30"><div class="h-16 w-full px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm font-semibold tracking-tight text-primary">E-Books</span></div><div class="relative flex items-center min-w-[280px] lg:min-w-[340px]"><span class="material-symbols-outlined absolute left-space-md text-outline text-[20px] pointer-events-none">search</span><input class="w-full h-11 pl-11 pr-space-md bg-surface-container-lowest border border-outline-variant/40 rounded-xl font-ui-body text-ui-body text-on-surface placeholder:text-outline-variant focus:outline-none focus:border-secondary transition-colors" placeholder="Search titles, authors, passages..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="flex items-center bg-surface-container-lowest border border-outline-variant/40 rounded-full p-1 gap-1"><button class="w-7 h-7 rounded-full bg-surface-bright border-2 border-secondary flex items-center justify-center" title="Paper Mode" type="button"><span class="sr-only">Paper</span></button><button class="w-7 h-7 rounded-full bg-[#f3e7d0] border border-outline-variant/30 flex items-center justify-center" title="Sepia Mode" type="button"><span class="sr-only">Sepia</span></button><button class="w-7 h-7 rounded-full bg-[#1b1a18] border border-outline-variant/30 flex items-center justify-center" title="Dark Mode" type="button"><span class="sr-only">Dark</span></button><button class="w-7 h-7 rounded-full bg-[#000000] border border-outline-variant/30 flex items-center justify-center" title="OLED Mode" type="button"><span class="sr-only">OLED</span></button></div><button class="w-11 h-11 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" title="Toggle Focus Mode" type="button"><span class="material-symbols-outlined text-[22px]">fullscreen</span></button><div class="h-6 w-[1px] bg-outline-variant/30"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="hidden sm:flex flex-col text-right"><span class="font-label-sm text-label-sm font-semibold text-on-surface">Reader</span><span class="font-label-sm text-label-sm text-secondary">42m today</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WAfjIgtjFuDM9Z-381-Tql9U-YXP_jkgDKxGu1vGw6mxRPkkLgBzCrBaW3fYXvGIJTYXesjfWrkD5jvf9ImVlkYyIO1425uktQcZmbW2uoFBE_WzT1Xw9MfR8N9WZdVAYxC69LRVqMmdq2dgbPUA8Cd4enO7lqib2gq8QHxQD9oiopfvxj9KrjJ8sKzcfBEQEYg08pOLBWbIHlwCfPzYb5dJYlJl6YQpGmjBbfS4SxVIGfNxmcna_U"/></div></div></div></header><main class="relative pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="w-full max-w-7xl mx-auto px-space-md sm:px-space-xl py-space-xl space-y-space-2xl">
+<!-- Header Block -->
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-md pb-space-sm border-b border-outline-variant/30">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">Ergonomics &amp; Environment</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Profile synced</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary">Display &amp; Reading Surface</h1>
+<p class="font-ui-body text-ui-body text-on-surface-variant max-w-2xl">
+          Calibrate ambient luminosity, optical letterforms, and paper emulation to alleviate optical fatigue across extended sessions.
+        </p>
+</div>
+<!-- Quick Action Controls -->
+<div class="flex items-center gap-space-sm self-start sm:self-auto">
+<button class="min-h-[48px] px-space-md rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex items-center gap-2" id="btnResetDefaults">
+<span class="material-symbols-outlined text-[18px] text-outline">restart_alt</span>
+<span>Reset Defaults</span>
+</button>
+<button class="min-h-[48px] px-space-lg rounded-lg bg-secondary text-on-secondary hover:bg-on-secondary-container font-label-md text-label-md transition-colors flex items-center gap-2" id="btnSavePreset">
+<span class="material-symbols-outlined text-[18px]">bookmark_add</span>
+<span>Save Profile</span>
+</button>
+</div>
+</div>
+<!-- Live Reading Simulation Window -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm border border-outline-variant/20 flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px]">visibility</span>
+<span class="font-ui-body-strong text-ui-body-strong text-primary">Dynamic Specimen Preview</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-3 py-1 rounded-full text-label-sm font-label-sm bg-surface-container text-on-surface-variant" id="themeTag">Paper Stock</span>
+<span class="px-3 py-1 rounded-full text-label-sm font-label-sm bg-secondary-fixed text-on-secondary-fixed font-semibold" id="fontTag">Literata • 18px</span>
+</div>
+</div>
+<!-- Book Frame Simulator -->
+<div class="w-full rounded-lg bg-[#FAF8F4] text-[#1F1D1A] p-6 sm:p-10 transition-colors duration-300 shadow-sm relative overflow-hidden" id="specimenCanvas">
+<div class="absolute top-4 right-5 text-right opacity-40 font-label-sm text-label-sm select-none">
+          Folio IX • § 42
+        </div>
+<div class="max-w-[620px] mx-auto transition-all duration-200" id="specimenInner">
+<p class="font-headline-sm text-headline-sm mb-2 opacity-90">Chapter IV: The Tactile Artifact</p>
+<p class="font-body-reading-md text-body-reading-md text-justify leading-relaxed" id="specimenParagraph">
+            The printed sheet possesses a distinct acoustic resonance when turned slowly under late dusk. It creates an immovable perimeter for human thought, unbothered by transient notifications or fluctuating backlights. In digital translation, every typographic hairline, tracking ratio, and tonal pigment must preserve this contemplative refuge.
+          </p>
+<div class="mt-4 pt-3 border-t border-current/15 flex items-center justify-between text-current/60 font-label-sm text-label-sm">
+<span>Standard Margin • 1.5 Leading</span>
+<span>284 Words Left in Chapter</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Visual Themes & Substrates -->
+<section class="space-y-space-md">
+<div class="flex items-baseline justify-between">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary">Surface Pigment &amp; Substrate</h2>
+<p class="font-ui-body text-ui-body text-on-surface-variant">Four balanced chromatic formulations tailored to natural ambient illumination.</p>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Strict Zero-Glare Metaphor</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Theme 1: Paper -->
+<button class="theme-card text-left p-space-md rounded-xl bg-surface-container-lowest border-2 border-secondary transition-all flex flex-col justify-between h-48 group relative" data-theme="paper" type="button">
+<div class="w-full flex items-center justify-between">
+<span class="font-ui-body-strong text-ui-body-strong text-primary">1. Paper Stock</span>
+<span class="check-icon material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+</div>
+<div class="w-full h-20 rounded-lg bg-[#FAF8F4] p-3 flex flex-col justify-between border border-[#E6E1D8]">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-[#B5532E]"></span>
+<span class="font-label-sm text-label-sm text-[#1F1D1A]/70 font-serif">Ivory • Warm Cotton</span>
+</div>
+<p class="font-serif text-[12px] leading-tight text-[#1F1D1A] line-clamp-2">Charcoal typography pressed upon cream vellum weave.</p>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>#FAF8F4 / #1F1D1A</span>
+<span class="text-secondary font-medium">Default</span>
+</div>
+</button>
+<!-- Theme 2: Sepia -->
+<button class="theme-card text-left p-space-md rounded-xl bg-surface-container-lowest border border-outline-variant/30 hover:border-outline-variant transition-all flex flex-col justify-between h-48 group relative" data-theme="sepia" type="button">
+<div class="w-full flex items-center justify-between">
+<span class="font-ui-body-strong text-ui-body-strong text-primary">2. Warm Sepia</span>
+<span class="check-icon hidden material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+</div>
+<div class="w-full h-20 rounded-lg bg-[#F3E7D0] p-3 flex flex-col justify-between border border-[#dfd0b5]">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-[#8c531b]"></span>
+<span class="font-label-sm text-label-sm text-[#3B2F20]/80 font-serif">Amber Parchment</span>
+</div>
+<p class="font-serif text-[12px] leading-tight text-[#3B2F20] line-clamp-2">Bistre carbon inks bathed in candlelight hue.</p>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>#F3E7D0 / #3B2F20</span>
+<span>Twilight</span>
+</div>
+</button>
+<!-- Theme 3: Dark -->
+<button class="theme-card text-left p-space-md rounded-xl bg-surface-container-lowest border border-outline-variant/30 hover:border-outline-variant transition-all flex flex-col justify-between h-48 group relative" data-theme="dark" type="button">
+<div class="w-full flex items-center justify-between">
+<span class="font-ui-body-strong text-ui-body-strong text-primary">3. Slate Charcoal</span>
+<span class="check-icon hidden material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+</div>
+<div class="w-full h-20 rounded-lg bg-[#1B1A18] p-3 flex flex-col justify-between border border-[#2b2a26]">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-[#ffb59c]"></span>
+<span class="font-label-sm text-label-sm text-[#E8E4DC]/70 font-serif">Soft Charcoal</span>
+</div>
+<p class="font-serif text-[12px] leading-tight text-[#E8E4DC] line-clamp-2">Low-contrast ivory letters on basalt slate plane.</p>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>#1B1A18 / #E8E4DC</span>
+<span>Bedside</span>
+</div>
+</button>
+<!-- Theme 4: OLED -->
+<button class="theme-card text-left p-space-md rounded-xl bg-surface-container-lowest border border-outline-variant/30 hover:border-outline-variant transition-all flex flex-col justify-between h-48 group relative" data-theme="oled" type="button">
+<div class="w-full flex items-center justify-between">
+<span class="font-ui-body-strong text-ui-body-strong text-primary">4. True Black OLED</span>
+<span class="check-icon hidden material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+</div>
+<div class="w-full h-20 rounded-lg bg-[#000000] p-3 flex flex-col justify-between border border-[#1f1f1f]">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-[#cdc5bc]"></span>
+<span class="font-label-sm text-label-sm text-[#CFCBC2]/70 font-serif">Zero-Lumen Cut</span>
+</div>
+<p class="font-serif text-[12px] leading-tight text-[#CFCBC2] line-clamp-2">Total pixel shutdown with warm zinc text tone.</p>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>#000000 / #CFCBC2</span>
+<span>Zero Watt</span>
+</div>
+</button>
+</div>
+</section>
+<!-- Main Settings Bento: Typography & Geometry -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Typography Foundry Column (7 cols) -->
+<section class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-space-lg space-y-space-lg border border-outline-variant/20 shadow-sm">
+<div class="flex items-center justify-between pb-space-sm border-b border-outline-variant/30">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary">spellcheck</span>
+<h2 class="font-headline-md text-headline-md text-primary">Typographic Geometry</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Optical Sizing Enabled</span>
+</div>
+<!-- Font Face Options -->
+<div class="space-y-space-sm">
+<label class="font-ui-body-strong text-ui-body-strong text-on-surface block">Typeface Selection</label>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm" id="fontFaceGroup">
+<button class="font-pill min-h-[48px] px-space-md rounded-lg bg-secondary-fixed text-on-secondary-fixed font-headline-sm text-[16px] flex items-center justify-center font-medium transition-all" data-font="Literata" type="button">
+              Literata
+            </button>
+<button class="font-pill min-h-[48px] px-space-md rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-serif text-[16px] flex items-center justify-center transition-all" data-font="Bookerly" type="button">
+              Bookerly
+            </button>
+<button class="font-pill min-h-[48px] px-space-md rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface italic font-serif text-[16px] flex items-center justify-center transition-all" data-font="Newsreader" type="button">
+              Newsreader
+            </button>
+<button class="font-pill min-h-[48px] px-space-md rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-ui-body text-[15px] flex items-center justify-center transition-all" data-font="Inter" type="button">
+              Inter Sans
+            </button>
+</div>
+</div>
+<!-- Font Scale Slider -->
+<div class="space-y-space-sm pt-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-ui-body-strong text-ui-body-strong text-on-surface" for="fontSizeRange">Base Body Scale</label>
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg font-semibold text-secondary" id="fontSizeDisplay">18px</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">(Literata 400)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="font-serif text-sm text-on-surface-variant select-none">A</span>
+<input class="w-full h-2 bg-surface-container rounded-lg appearance-none cursor-pointer accent-secondary focus:outline-none" id="fontSizeRange" max="26" min="14" step="1" type="range" value="18"/>
+<span class="font-serif text-xl font-bold text-primary select-none">A</span>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant px-1">
+<span>14px Compact</span>
+<span>18px Standard</span>
+<span>22px Relaxed</span>
+<span>26px Legibility</span>
+</div>
+</div>
+<!-- Leading / Line Spacing -->
+<div class="space-y-space-sm pt-space-xs">
+<label class="font-ui-body-strong text-ui-body-strong text-on-surface block">Vertical Rhythm &amp; Leading</label>
+<div class="grid grid-cols-4 gap-space-sm" id="leadingGroup">
+<button class="leading-btn min-h-[48px] rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex flex-col items-center justify-center" data-leading="1.2" type="button">
+<span class="font-semibold">1.2</span>
+<span class="text-[10px] text-on-surface-variant">Dense</span>
+</button>
+<button class="leading-btn min-h-[48px] rounded-lg bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md transition-colors flex flex-col items-center justify-center" data-leading="1.5" type="button">
+<span class="font-semibold">1.5</span>
+<span class="text-[10px]">Balanced</span>
+</button>
+<button class="leading-btn min-h-[48px] rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex flex-col items-center justify-center" data-leading="1.8" type="button">
+<span class="font-semibold">1.8</span>
+<span class="text-[10px] text-on-surface-variant">Airy</span>
+</button>
+<button class="leading-btn min-h-[48px] rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex flex-col items-center justify-center" data-leading="2.0" type="button">
+<span class="font-semibold">2.0</span>
+<span class="text-[10px] text-on-surface-variant">Expansive</span>
+</button>
+</div>
+</div>
+<!-- Margin Width Settings -->
+<div class="space-y-space-sm pt-space-xs">
+<label class="font-ui-body-strong text-ui-body-strong text-on-surface block">Folio Margin Gutter</label>
+<div class="grid grid-cols-3 gap-space-sm" id="marginGroup">
+<button class="margin-btn min-h-[48px] rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex items-center justify-center gap-2" data-margin="compact" type="button">
+<span class="material-symbols-outlined text-[18px]">format_align_justify</span>
+<span>Compact</span>
+</button>
+<button class="margin-btn min-h-[48px] rounded-lg bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md transition-colors flex items-center justify-center gap-2" data-margin="standard" type="button">
+<span class="material-symbols-outlined text-[18px]">vertical_align_center</span>
+<span>Standard (640px)</span>
+</button>
+<button class="margin-btn min-h-[48px] rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex items-center justify-center gap-2" data-margin="generous" type="button">
+<span class="material-symbols-outlined text-[18px]">space_dashboard</span>
+<span>Generous</span>
+</button>
+</div>
+</div>
+</section>
+<!-- PDF & E-Reader Engine Controls (5 cols) -->
+<section class="lg:col-span-5 bg-surface-container-lowest rounded-xl p-space-lg space-y-space-md border border-outline-variant/20 shadow-sm flex flex-col justify-between">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between pb-space-sm border-b border-outline-variant/30">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary">chrome_reader_mode</span>
+<h2 class="font-headline-md text-headline-md text-primary">Paper Engine &amp; PDF</h2>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">EPUB v3 / PDF 2.0</span>
+</div>
+<!-- Feature Toggles List -->
+<div class="space-y-space-sm divide-y divide-outline-variant/20">
+<!-- Toggle 1: E-Ink Refresh Simulation -->
+<label class="pt-space-sm flex items-start justify-between cursor-pointer min-h-[48px]">
+<div class="pr-space-md">
+<span class="font-ui-body-strong text-ui-body-strong text-on-surface block">Simulate E-Ink Page Refresh</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Subtle anti-aliasing softening on pagination turn to mimic electrophoretic ink.</span>
+</div>
+<div class="relative inline-flex items-center cursor-pointer mt-1">
+<input checked="" class="sr-only peer toggle-input" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-surface-dim after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</div>
+</label>
+<!-- Toggle 2: Smart Crop White Margin -->
+<label class="pt-space-sm flex items-start justify-between cursor-pointer min-h-[48px]">
+<div class="pr-space-md">
+<span class="font-ui-body-strong text-ui-body-strong text-on-surface block">Crop PDF White Margins</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Algorithmic auto-crop on scanned documents to maximize reading zone.</span>
+</div>
+<div class="relative inline-flex items-center cursor-pointer mt-1">
+<input checked="" class="sr-only peer toggle-input" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-surface-dim after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</div>
+</label>
+<!-- Toggle 3: Two-Page Spread in Landscape -->
+<label class="pt-space-sm flex items-start justify-between cursor-pointer min-h-[48px]">
+<div class="pr-space-md">
+<span class="font-ui-body-strong text-ui-body-strong text-on-surface block">Two-Page Spread in Landscape</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Locks folio into physical book spread when orientation is rotated horizontal.</span>
+</div>
+<div class="relative inline-flex items-center cursor-pointer mt-1">
+<input checked="" class="sr-only peer toggle-input" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-surface-dim after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</div>
+</label>
+<!-- Toggle 4: Continuous Scroll vs Turn -->
+<label class="pt-space-sm flex items-start justify-between cursor-pointer min-h-[48px]">
+<div class="pr-space-md">
+<span class="font-ui-body-strong text-ui-body-strong text-on-surface block">Continuous Vertical Scroll</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Smooth non-paginated roll instead of discrete spatial page flipping.</span>
+</div>
+<div class="relative inline-flex items-center cursor-pointer mt-1">
+<input class="sr-only peer toggle-input" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-surface-dim after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</div>
+</label>
+<!-- Toggle 5: Distraction-Free Reading -->
+<label class="pt-space-sm flex items-start justify-between cursor-pointer min-h-[48px]">
+<div class="pr-space-md">
+<span class="font-ui-body-strong text-ui-body-strong text-on-surface block">Distraction-Free Immersion</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Conceal battery indicator, page count, and status header during uninterrupted reading.</span>
+</div>
+<div class="relative inline-flex items-center cursor-pointer mt-1">
+<input checked="" class="sr-only peer toggle-input" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-surface-dim after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</div>
+</label>
+</div>
+</div>
+<div class="pt-space-sm bg-surface-container-low p-space-md rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">auto_stories</span>
+<span class="font-label-sm text-label-sm text-on-surface">Book Binding Relief</span>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-secondary">Subtle 1px Gutter Inset</span>
+</div>
+</section>
+</div>
+<!-- Storage, Backup & Synchronization Footer Section -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg border border-outline-variant/20 shadow-sm space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-sm border-b border-outline-variant/30">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary">cloud_sync</span>
+<h2 class="font-headline-md text-headline-md text-primary">Library Cache &amp; Synchronization</h2>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-700"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Local Vault Synced (2m ago)</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Offline Storage Card -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col justify-between space-y-space-sm">
+<div class="flex items-start justify-between">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Encrypted Storage</span>
+<p class="font-ui-body-strong text-ui-body-strong text-primary">Offline PDF &amp; EPUB Cache</p>
+</div>
+<span class="material-symbols-outlined text-outline">storage</span>
+</div>
+<div class="space-y-1.5">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Allocated Storage</span>
+<span class="font-semibold text-primary">420 MB / 2.0 GB</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full w-[21%]"></div>
+</div>
+</div>
+<div class="pt-1 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">14 Folios downloaded</span>
+<button class="text-secondary font-label-sm text-label-sm hover:underline font-semibold" type="button">Purge Cache</button>
+</div>
+</div>
+<!-- Annotation & Scribble Sync -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col justify-between space-y-space-sm">
+<div class="flex items-start justify-between">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Telemetry &amp; Marginalia</span>
+<p class="font-ui-body-strong text-ui-body-strong text-primary">Highlights &amp; Markdown Notes</p>
+</div>
+<span class="material-symbols-outlined text-outline">edit_note</span>
+</div>
+<p class="font-ui-body text-ui-body text-on-surface-variant text-[13px]">
+            642 highlighted passages across 31 volumes synced via end-to-end local repository.
+          </p>
+<div class="pt-1 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-emerald-800 font-medium">Obsidian Vault Ready</span>
+<button class="text-secondary font-label-sm text-label-sm hover:underline font-semibold" type="button">Export JSON</button>
+</div>
+</div>
+<!-- Diagnostic / Calibration Profile -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col justify-between space-y-space-sm">
+<div class="flex items-start justify-between">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">E-Ink Refresh Profile</span>
+<p class="font-ui-body-strong text-ui-body-strong text-primary">Waveform Modulation</p>
+</div>
+<span class="material-symbols-outlined text-outline">tune</span>
+</div>
+<p class="font-ui-body text-ui-body text-on-surface-variant text-[13px]">
+            Regal Anti-Ghosting algorithm active. Full inversion refresh scheduled every 10 pages.
+          </p>
+<div class="pt-1 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Waveform: GC16</span>
+<button class="text-secondary font-label-sm text-label-sm hover:underline font-semibold" type="button">Run Clean Cycle</button>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script>
+  (function initDisplayControls() {
+    const specimen = document.getElementById('specimenCanvas');
+    const specimenInner = document.getElementById('specimenInner');
+    const specimenParagraph = document.getElementById('specimenParagraph');
+    const themeCards = document.querySelectorAll('.theme-card');
+    const fontPills = document.querySelectorAll('.font-pill');
+    const leadingButtons = document.querySelectorAll('.leading-btn');
+    const marginButtons = document.querySelectorAll('.margin-btn');
+    const fontSizeRange = document.getElementById('fontSizeRange');
+    const fontSizeDisplay = document.getElementById('fontSizeDisplay');
+    const themeTag = document.getElementById('themeTag');
+    const fontTag = document.getElementById('fontTag');
+
+    let currentFont = 'Literata';
+    let currentSize = 18;
+
+    const themeMap = {
+      paper: {
+        bg: '#FAF8F4',
+        text: '#1F1D1A',
+        name: 'Paper Stock'
+      },
+      sepia: {
+        bg: '#F3E7D0',
+        text: '#3B2F20',
+        name: 'Warm Sepia'
+      },
+      dark: {
+        bg: '#1B1A18',
+        text: '#E8E4DC',
+        name: 'Slate Charcoal'
+      },
+      oled: {
+        bg: '#000000',
+        text: '#CFCBC2',
+        name: 'Pure Black OLED'
+      }
+    };
+
+    // Theme Selector Interactive Logic
+    themeCards.forEach(card => {
+      card.addEventListener('click', () => {
+        themeCards.forEach(c => {
+          c.classList.remove('border-2', 'border-secondary');
+          c.classList.add('border', 'border-outline-variant/30');
+          c.querySelector('.check-icon')?.classList.add('hidden');
+        });
+
+        card.classList.remove('border-outline-variant/30');
+        card.classList.add('border-2', 'border-secondary');
+        card.querySelector('.check-icon')?.classList.remove('hidden');
+
+        const themeKey = card.getAttribute('data-theme');
+        const theme = themeMap[themeKey];
+        if (theme && specimen) {
+          specimen.style.backgroundColor = theme.bg;
+          specimen.style.color = theme.text;
+          if (themeTag) themeTag.textContent = theme.name;
+        }
+      });
+    });
+
+    // Font Family interactive switch
+    fontPills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        fontPills.forEach(p => {
+          p.classList.remove('bg-secondary-fixed', 'text-on-secondary-fixed', 'font-semibold');
+          p.classList.add('bg-surface-container', 'text-on-surface');
+        });
+
+        pill.classList.remove('bg-surface-container', 'text-on-surface');
+        pill.classList.add('bg-secondary-fixed', 'text-on-secondary-fixed', 'font-semibold');
+
+        const selectedFont = pill.getAttribute('data-font');
+        currentFont = selectedFont;
+        if (specimenParagraph) {
+          if (selectedFont === 'Inter') {
+            specimenParagraph.style.fontFamily = 'Inter, sans-serif';
+          } else if (selectedFont === 'Newsreader') {
+            specimenParagraph.style.fontFamily = 'Newsreader, Georgia, serif';
+            specimenParagraph.style.fontStyle = 'italic';
+          } else if (selectedFont === 'Bookerly') {
+            specimenParagraph.style.fontFamily = 'Bookerly, Georgia, serif';
+            specimenParagraph.style.fontStyle = 'normal';
+          } else {
+            specimenParagraph.style.fontFamily = 'Literata, serif';
+            specimenParagraph.style.fontStyle = 'normal';
+          }
+        }
+        updateFontTag();
+      });
+    });
+
+    // Font Scale interactive Slider
+    if (fontSizeRange) {
+      fontSizeRange.addEventListener('input', (e) => {
+        const val = e.target.value;
+        currentSize = val;
+        if (fontSizeDisplay) fontSizeDisplay.textContent = val + 'px';
+        if (specimenParagraph) {
+          specimenParagraph.style.fontSize = val + 'px';
+          specimenParagraph.style.lineHeight = (parseInt(val) * 1.6) + 'px';
+        }
+        updateFontTag();
+      });
+    }
+
+    function updateFontTag() {
+      if (fontTag) fontTag.textContent = `${currentFont} • ${currentSize}px`;
+    }
+
+    // Line Spacing Interactive Switch
+    leadingButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        leadingButtons.forEach(b => {
+          b.classList.remove('bg-secondary-fixed', 'text-on-secondary-fixed');
+          b.classList.add('bg-surface-container', 'text-on-surface');
+        });
+        btn.classList.remove('bg-surface-container', 'text-on-surface');
+        btn.classList.add('bg-secondary-fixed', 'text-on-secondary-fixed');
+
+        const leadingVal = parseFloat(btn.getAttribute('data-leading'));
+        if (specimenParagraph) {
+          specimenParagraph.style.lineHeight = leadingVal.toString();
+        }
+      });
+    });
+
+    // Margin Gutter Switch
+    marginButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        marginButtons.forEach(b => {
+          b.classList.remove('bg-secondary-fixed', 'text-on-secondary-fixed');
+          b.classList.add('bg-surface-container', 'text-on-surface');
+        });
+        btn.classList.remove('bg-surface-container', 'text-on-surface');
+        btn.classList.add('bg-secondary-fixed', 'text-on-secondary-fixed');
+
+        const marginType = btn.getAttribute('data-margin');
+        if (specimenInner) {
+          if (marginType === 'compact') {
+            specimenInner.style.maxWidth = '100%';
+          } else if (marginType === 'generous') {
+            specimenInner.style.maxWidth = '460px';
+          } else {
+            specimenInner.style.maxWidth = '620px';
+          }
+        }
+      });
+    });
+
+    // Reset defaults button
+    const btnReset = document.getElementById('btnResetDefaults');
+    if (btnReset) {
+      btnReset.addEventListener('click', () => {
+        // Reset to paper
+        themeCards[0]?.click();
+        fontPills[0]?.click();
+        leadingButtons[1]?.click();
+        marginButtons[1]?.click();
+        if (fontSizeRange) {
+          fontSizeRange.value = 18;
+          fontSizeRange.dispatchEvent(new Event('input'));
+        }
+      });
+    }
+  })();
+</script></main></div></body></html>

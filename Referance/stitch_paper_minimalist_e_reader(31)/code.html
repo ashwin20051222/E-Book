@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;1,7..72,400&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>.material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz' 24;font-size:22px;display:inline-block;line-height:1;}@layer base{html,body{width:100%;margin:0;padding:0;background-color:#FAF8F4;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;font-family:'Inter',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'secondary-container': '#ff8c62', 'on-surface': '#1b1c1a', 'on-primary': '#ffffff', 'on-primary-fixed-variant': '#494643', 'surface-container': '#efeeea', 'error-container': '#ffdad6', 'on-primary-container': '#898580', 'on-error': '#ffffff', 'on-secondary-fixed': '#380c00', 'on-primary-fixed': '#1d1b18', 'surface-bright': '#fbf9f5', 'on-tertiary-container': '#90837b', 'error': '#ba1a1a', 'tertiary': '#070301', 'surface-dim': '#dbdad6', 'surface-tint': '#615e5a', 'tertiary-container': '#241c17', 'secondary-fixed-dim': '#ffb59c', 'on-secondary': '#ffffff', 'tertiary-fixed-dim': '#d3c3bb', 'on-tertiary': '#ffffff', 'on-tertiary-fixed-variant': '#4f453e', 'primary-fixed-dim': '#cbc6c1', 'secondary': '#9e421e', 'on-error-container': '#93000a', 'on-tertiary-fixed': '#221a15', 'secondary-fixed': '#ffdbcf', 'surface-variant': '#e4e2de', 'tertiary-fixed': '#f0dfd6', 'on-background': '#1b1c1a', 'surface': '#fbf9f5', 'outline': '#7c766e', 'on-surface-variant': '#4a463f', 'surface-container-high': '#eae8e4', 'surface-container-low': '#f5f3ef', 'inverse-surface': '#30312e', 'primary-fixed': '#e7e1dc', 'inverse-on-surface': '#f2f0ed', 'primary': '#040302', 'surface-container-lowest': '#ffffff', 'surface-container-highest': '#e4e2de', 'background': '#fbf9f5', 'primary-container': '#1f1d1a', 'outline-variant': '#cdc5bc', 'on-secondary-fixed-variant': '#7f2b08', 'inverse-primary': '#cbc6c1', 'on-secondary-container': '#752402' }, borderRadius: { DEFAULT: '0.25rem', lg: '0.5rem', xl: '0.75rem', full: '9999px' }, spacing: {}, fontFamily: { headline: ['Literata'], display: ['Literata'], body: ['Literata'], label: ['Inter'] }, fontSize: {} } } }</script></head><body class="bg-surface text-on-surface min-h-screen flex flex-col antialiased selection:bg-secondary-fixed"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)] pt-safe"><div class="h-14 px-4 flex items-center justify-between"><div class="flex items-center gap-2.5 min-w-0"><img alt="Minimalist flat vector-style logo mark for an e-reader app called E-Books. A calm, literary symbol made from geometric rounded shapes forming an abstract open foliate leaf-book mark in warm terracotta #B5532E on paper background #FAF8F4.. Brand logo. - Primary color: #1f1d1a - Font: literata - Mode: light - Roundness: rounded-md" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1XBZDzq3recAVZCbJPXEy5-G-rbCqNosasKU1HPwGuLzVRMgXtaCksALYXRpZuLvM-l5lNzjSlg87E3cKuo_slmR2NCXNaaWnAYgVVNp_-Ecm0Qp9411EbTXLIm2rDLU9qLPz2Y3KQMufotCs4ked5BiGvFJzFarW3sJGlBYkGeg_pwruBZg5VhXv7gMJ8UNj-BA3loWg6lTXfmLP3tLffZv55xIb6AC1OcVGkGv_wKtMzZXAnTML9f"/><span class="font-headline font-semibold text-lg text-primary tracking-tight">E-Books</span><span class="hidden">Settings</span></div><div class="flex items-center gap-2"><button aria-label="Search library" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined">search</span></button><button class="h-8 px-3 rounded-full flex items-center gap-1.5 text-secondary border border-secondary/40 bg-surface-container-lowest/80 text-xs font-label font-medium hover:bg-secondary/10 transition-colors" type="button"><span class="material-symbols-outlined text-[16px]">download</span><span>Install</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover ml-1 shadow-[0_1px_3px_rgba(0,0,0,0.08)]" src="https://lh3.googleusercontent.com/aida/AEtjO1VCQkgLD3CxMk02hm2VK53IaX3IS8lk-UfqerqWdbEkuCLhpycJuO9w-WnMnm1BSWGf6PvMYFvhK8pl6JPoc4v9AiNa5wFNQGuzCi--Kfa1ck7FuK0QdTwucXi22PLoGkxXFZZj_y_9ima4w_hISZP5NMuPH4XrF70dEe-BUjcJujzM8FRTXX4oQX5CAXXSKyqp1Z5-4175Yi2YjY55aQcSOaw3JMpRR2EI_pj9bgPYhDVVLHe2-HG0"/></div></div></header><main class="flex-1 flex flex-col relative w-full pt-14 pb-20 bg-surface"><div class="flex flex-col w-full px-4 pt-2 pb-8">
+<div class="flex items-center justify-between py-2 mb-2">
+<button aria-label="Go back to settings" class="w-10 h-10 -ml-2 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label text-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Settings · Reading View</span>
+</div>
+<button aria-label="Reading surface guide" class="w-10 h-10 -mr-2 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined">help_outline</span>
+</button>
+</div>
+<header class="mb-5">
+<p class="font-label text-[11px] font-semibold uppercase tracking-wider text-secondary mb-1">Ergonomics &amp; Substrate</p>
+<h1 class="font-headline text-[22px] leading-[30px] font-semibold text-primary">Display &amp; Reading Surface</h1>
+<p class="font-label text-xs text-on-surface-variant mt-1">Calibrate typography weight, pigment temperature, and paper relief for deep reading.</p>
+</header>
+<section class="mb-6">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label text-xs font-semibold tracking-wide text-on-surface uppercase">Specimen Preview</span>
+<div class="flex items-center gap-1.5">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface font-label text-[11px] font-medium transition-colors" id="preview-substrate-chip">Paper Stock</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label text-[11px] font-medium transition-colors" id="preview-type-chip">Literata · 18px</span>
+</div>
+</div>
+<div class="rounded-xl p-5 bg-surface-container-lowest shadow-[0_1px_3px_rgba(31,29,26,0.06),0_4px_12px_rgba(31,29,26,0.03)] transition-colors duration-200" id="specimen-card">
+<div class="flex items-center gap-2 mb-3">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label text-[11px] uppercase tracking-wider text-on-surface-variant font-medium">Chapter IV · Folio 82</span>
+</div>
+<p class="font-body text-[18px] leading-[27px] text-[#1F1D1A] transition-all duration-150" id="specimen-text">
+        “The printed sheet possesses a distinct acoustic resonance when turned slowly under late dusk. It creates an immovable perimeter for human thought, unbothered by transient notifications.”
+      </p>
+<div class="mt-4 pt-3 flex items-center justify-between text-on-surface-variant font-label text-[11px]">
+<span>P. 148 · 3 min remaining</span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">local_cafe</span>
+<span>100% natural substrate</span>
+</div>
+</div>
+</div>
+</section>
+<section class="mb-6">
+<div class="flex items-baseline justify-between mb-2.5">
+<h2 class="font-label text-xs font-semibold uppercase tracking-wide text-on-surface">Surface Pigment</h2>
+<span class="font-label text-[11px] text-on-surface-variant">Warm reflective papers</span>
+</div>
+<div class="grid grid-cols-2 gap-2.5" id="pigment-grid">
+<button class="pigment-btn text-left p-3 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between h-[92px] transition-all relative overflow-hidden group" data-pigment="paper" type="button">
+<div class="absolute inset-0 bg-[#FAF8F4]"></div>
+<div class="relative z-10 flex items-center justify-between w-full">
+<span class="font-headline font-semibold text-xs text-[#1F1D1A]">Paper Stock</span>
+<span class="pigment-check w-5 h-5 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-[13px]">
+<span class="material-symbols-outlined text-[14px] leading-none">check</span>
+</span>
+</div>
+<div class="relative z-10">
+<p class="font-label text-[11px] font-medium text-[#1F1D1A]/80">Ivory &amp; Warm Cotton</p>
+<p class="font-label text-[10px] text-[#1F1D1A]/60">#FAF8F4 / #1F1D1A</p>
+</div>
+</button>
+<button class="pigment-btn text-left p-3 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between h-[92px] transition-all relative overflow-hidden group" data-pigment="sepia" type="button">
+<div class="absolute inset-0 bg-[#F5EFEB]"></div>
+<div class="relative z-10 flex items-center justify-between w-full">
+<span class="font-headline font-semibold text-xs text-[#3B2F20]">Warm Sepia</span>
+<span class="pigment-check hidden w-5 h-5 rounded-full bg-secondary text-on-secondary items-center justify-center text-[13px]">
+<span class="material-symbols-outlined text-[14px] leading-none">check</span>
+</span>
+</div>
+<div class="relative z-10">
+<p class="font-label text-[11px] font-medium text-[#3B2F20]/80">Amber Parchment</p>
+<p class="font-label text-[10px] text-[#3B2F20]/60">#F5EFEB / #3B2F20</p>
+</div>
+</button>
+<button class="pigment-btn text-left p-3 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between h-[92px] transition-all relative overflow-hidden group" data-pigment="slate" type="button">
+<div class="absolute inset-0 bg-[#1E2022]"></div>
+<div class="relative z-10 flex items-center justify-between w-full">
+<span class="font-headline font-semibold text-xs text-[#E8E4DC]">Slate Charcoal</span>
+<span class="pigment-check hidden w-5 h-5 rounded-full bg-secondary-fixed text-on-secondary-fixed items-center justify-center text-[13px]">
+<span class="material-symbols-outlined text-[14px] leading-none">check</span>
+</span>
+</div>
+<div class="relative z-10">
+<p class="font-label text-[11px] font-medium text-[#E8E4DC]/80">Low-Glare Dusk</p>
+<p class="font-label text-[10px] text-[#E8E4DC]/60">#1E2022 / #E8E4DC</p>
+</div>
+</button>
+<button class="pigment-btn text-left p-3 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between h-[92px] transition-all relative overflow-hidden group" data-pigment="oled" type="button">
+<div class="absolute inset-0 bg-[#000000]"></div>
+<div class="relative z-10 flex items-center justify-between w-full">
+<span class="font-headline font-semibold text-xs text-[#D0D0D0]">True Black OLED</span>
+<span class="pigment-check hidden w-5 h-5 rounded-full bg-secondary-fixed text-on-secondary-fixed items-center justify-center text-[13px]">
+<span class="material-symbols-outlined text-[14px] leading-none">check</span>
+</span>
+</div>
+<div class="relative z-10">
+<p class="font-label text-[11px] font-medium text-[#D0D0D0]/80">Zero-Lumen Cut</p>
+<p class="font-label text-[10px] text-[#D0D0D0]/60">#000000 / #D0D0D0</p>
+</div>
+</button>
+</div>
+</section>
+<section class="mb-6">
+<div class="flex items-baseline justify-between mb-2">
+<h2 class="font-label text-xs font-semibold uppercase tracking-wide text-on-surface">Typeface</h2>
+<span class="font-label text-[11px] text-on-surface-variant">Editorial optical cuts</span>
+</div>
+<div class="flex gap-2 overflow-x-auto pb-1 -mx-4 px-4 scrollbar-none" id="typeface-row">
+<button class="type-btn flex-shrink-0 h-12 px-4 rounded-lg bg-[#F4E3DA] text-secondary font-headline text-sm font-semibold flex items-center gap-2 shadow-xs transition-colors" data-font="Literata" type="button">
+<span class="material-symbols-outlined text-base">spellcheck</span>
+<span>Literata</span>
+<span class="text-[10px] px-1.5 py-0.5 rounded-full bg-secondary/15 font-label font-medium uppercase tracking-tight">Serif</span>
+</button>
+<button class="type-btn flex-shrink-0 h-12 px-4 rounded-lg bg-surface-container-lowest text-on-surface font-headline text-sm font-medium flex items-center gap-2 hover:bg-surface-container transition-colors shadow-xs" data-font="Bookerly" type="button">
+<span>Bookerly</span>
+<span class="text-[10px] px-1.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label uppercase tracking-tight">Book</span>
+</button>
+<button class="type-btn flex-shrink-0 h-12 px-4 rounded-lg bg-surface-container-lowest text-on-surface font-headline text-sm font-medium flex items-center gap-2 hover:bg-surface-container transition-colors shadow-xs" data-font="Newsreader" type="button">
+<span class="italic">Newsreader</span>
+<span class="text-[10px] px-1.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label uppercase tracking-tight">Editorial</span>
+</button>
+<button class="type-btn flex-shrink-0 h-12 px-4 rounded-lg bg-surface-container-lowest text-on-surface font-label text-sm font-medium flex items-center gap-2 hover:bg-surface-container transition-colors shadow-xs" data-font="Inter Sans" type="button">
+<span>Inter Sans</span>
+<span class="text-[10px] px-1.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label uppercase tracking-tight">Clean</span>
+</button>
+</div>
+</section>
+<section class="mb-6">
+<div class="flex items-center justify-between mb-2">
+<h2 class="font-label text-xs font-semibold uppercase tracking-wide text-on-surface">Base Body Scale</h2>
+<span class="font-label text-xs font-semibold text-secondary" id="scale-indicator">18 px · Standard</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="flex items-center justify-between text-on-surface-variant font-headline mb-3 px-1">
+<span class="text-sm font-medium">A</span>
+<span class="text-xl font-medium">A</span>
+</div>
+<div class="relative w-full py-2">
+<div class="h-2 w-full bg-surface-container rounded-full relative overflow-hidden">
+<div class="h-full bg-secondary rounded-full" id="slider-track" style="width: 33.3%;"></div>
+</div>
+<div class="flex justify-between items-center mt-2.5 px-0.5">
+<button class="scale-stop flex flex-col items-center gap-1 group" data-size="14" type="button">
+<span class="w-3.5 h-3.5 rounded-full bg-surface-container group-hover:bg-secondary-fixed transition-colors"></span>
+<span class="font-label text-[11px] text-on-surface-variant">14</span>
+</button>
+<button class="scale-stop flex flex-col items-center gap-1 group" data-size="18" type="button">
+<span class="w-3.5 h-3.5 rounded-full bg-secondary shadow-[0_0_0_3px_#F4E3DA] transition-colors"></span>
+<span class="font-label text-[11px] font-semibold text-secondary">18</span>
+</button>
+<button class="scale-stop flex flex-col items-center gap-1 group" data-size="22" type="button">
+<span class="w-3.5 h-3.5 rounded-full bg-surface-container group-hover:bg-secondary-fixed transition-colors"></span>
+<span class="font-label text-[11px] text-on-surface-variant">22</span>
+</button>
+<button class="scale-stop flex flex-col items-center gap-1 group" data-size="26" type="button">
+<span class="w-3.5 h-3.5 rounded-full bg-surface-container group-hover:bg-secondary-fixed transition-colors"></span>
+<span class="font-label text-[11px] text-on-surface-variant">26</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<section class="mb-6">
+<div class="flex items-center justify-between mb-2">
+<h2 class="font-label text-xs font-semibold uppercase tracking-wide text-on-surface">Vertical Rhythm</h2>
+<span class="font-label text-[11px] text-on-surface-variant">Line height metric</span>
+</div>
+<div class="grid grid-cols-4 gap-1.5 p-1 rounded-xl bg-surface-container shadow-inner" id="rhythm-strip">
+<button class="rhythm-btn py-2 px-1 rounded-lg text-center font-label text-xs font-medium text-on-surface-variant hover:text-on-surface transition-all" data-rhythm="1.2" type="button">
+        1.2 <span class="block text-[10px] opacity-75">Dense</span>
+</button>
+<button class="rhythm-btn py-2 px-1 rounded-lg text-center font-label text-xs font-semibold bg-secondary text-on-secondary shadow-xs transition-all" data-rhythm="1.5" type="button">
+        1.5 <span class="block text-[10px] text-secondary-fixed">Balanced</span>
+</button>
+<button class="rhythm-btn py-2 px-1 rounded-lg text-center font-label text-xs font-medium text-on-surface-variant hover:text-on-surface transition-all" data-rhythm="1.8" type="button">
+        1.8 <span class="block text-[10px] opacity-75">Airy</span>
+</button>
+<button class="rhythm-btn py-2 px-1 rounded-lg text-center font-label text-xs font-medium text-on-surface-variant hover:text-on-surface transition-all" data-rhythm="2.0" type="button">
+        2.0 <span class="block text-[10px] opacity-75">Expansive</span>
+</button>
+</div>
+</section>
+<section class="mb-6">
+<div class="flex items-center justify-between mb-2">
+<h2 class="font-label text-xs font-semibold uppercase tracking-wide text-on-surface">Margin Gutter</h2>
+<span class="font-label text-[11px] text-on-surface-variant">Reading width</span>
+</div>
+<div class="grid grid-cols-3 gap-1.5 p-1 rounded-xl bg-surface-container shadow-inner" id="gutter-strip">
+<button class="gutter-btn py-2 px-2 rounded-lg text-center font-label text-xs font-medium text-on-surface-variant hover:text-on-surface transition-all" data-gutter="compact" type="button">
+        Compact
+      </button>
+<button class="gutter-btn py-2 px-2 rounded-lg text-center font-label text-xs font-semibold bg-secondary text-on-secondary shadow-xs transition-all" data-gutter="standard" type="button">
+        Standard
+      </button>
+<button class="gutter-btn py-2 px-2 rounded-lg text-center font-label text-xs font-medium text-on-surface-variant hover:text-on-surface transition-all" data-gutter="generous" type="button">
+        Generous
+      </button>
+</div>
+</section>
+<div class="sticky bottom-2 z-40 mt-4 p-3 rounded-2xl bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_4px_20px_rgba(31,29,26,0.12)] flex items-center gap-3">
+<button class="flex-1 h-12 rounded-lg bg-surface-container text-on-surface font-label text-sm font-medium hover:bg-surface-container-high transition-colors flex items-center justify-center gap-1.5" id="reset-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">restart_alt</span>
+<span>Reset defaults</span>
+</button>
+<button class="flex-[1.4] h-12 rounded-lg bg-secondary text-on-secondary font-label text-sm font-semibold hover:bg-on-secondary-container transition-colors shadow-sm flex items-center justify-center gap-1.5" id="save-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark_added</span>
+<span>Save profile</span>
+</button>
+</div>
+</div>
+<script>
+(() => {
+  const specimenCard = document.getElementById('specimen-card');
+  const specimenText = document.getElementById('specimen-text');
+  const previewSubstrateChip = document.getElementById('preview-substrate-chip');
+  const previewTypeChip = document.getElementById('preview-type-chip');
+  const scaleIndicator = document.getElementById('scale-indicator');
+  const sliderTrack = document.getElementById('slider-track');
+
+  let currentFont = 'Literata';
+  let currentSize = 18;
+  let currentRhythm = 1.5;
+
+  const pigmentSchemes = {
+    paper: {
+      cardBg: '#FAF8F4',
+      textColor: '#1F1D1A',
+      chipText: 'Paper Stock',
+      labelColor: '#6B665E'
+    },
+    sepia: {
+      cardBg: '#F5EFEB',
+      textColor: '#3B2F20',
+      chipText: 'Warm Sepia',
+      labelColor: '#726350'
+    },
+    slate: {
+      cardBg: '#1E2022',
+      textColor: '#E8E4DC',
+      chipText: 'Slate Charcoal',
+      labelColor: '#9C968C'
+    },
+    oled: {
+      cardBg: '#000000',
+      textColor: '#D0D0D0',
+      chipText: 'True Black OLED',
+      labelColor: '#827E77'
+    }
+  };
+
+  const pigmentButtons = document.querySelectorAll('.pigment-btn');
+  pigmentButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const pigment = btn.getAttribute('data-pigment');
+      const scheme = pigmentSchemes[pigment];
+
+      pigmentButtons.forEach(b => {
+        const check = b.querySelector('.pigment-check');
+        check.classList.add('hidden');
+        check.classList.remove('flex');
+        b.classList.remove('ring-2', 'ring-secondary', 'ring-offset-1');
+      });
+
+      const currentCheck = btn.querySelector('.pigment-check');
+      currentCheck.classList.remove('hidden');
+      currentCheck.classList.add('flex');
+
+      specimenCard.style.backgroundColor = scheme.cardBg;
+      specimenText.style.color = scheme.textColor;
+      previewSubstrateChip.textContent = scheme.chipText;
+    });
+  });
+
+  const typeButtons = document.querySelectorAll('.type-btn');
+  typeButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const font = btn.getAttribute('data-font');
+      currentFont = font;
+
+      typeButtons.forEach(b => {
+        b.className = 'type-btn flex-shrink-0 h-12 px-4 rounded-lg bg-surface-container-lowest text-on-surface font-headline text-sm font-medium flex items-center gap-2 hover:bg-surface-container transition-colors shadow-xs';
+      });
+
+      btn.className = 'type-btn flex-shrink-0 h-12 px-4 rounded-lg bg-[#F4E3DA] text-secondary font-headline text-sm font-semibold flex items-center gap-2 shadow-xs transition-colors';
+
+      if (font === 'Inter Sans') {
+        specimenText.style.fontFamily = "'Inter', sans-serif";
+      } else {
+        specimenText.style.fontFamily = "'Literata', serif";
+      }
+
+      previewTypeChip.textContent = `${font} · ${currentSize}px`;
+    });
+  });
+
+  const scaleStops = document.querySelectorAll('.scale-stop');
+  const sizePercents = { '14': '0%', '18': '33.3%', '22': '66.6%', '26': '100%' };
+
+  scaleStops.forEach(stop => {
+    stop.addEventListener('click', () => {
+      const size = stop.getAttribute('data-size');
+      currentSize = parseInt(size, 10);
+      sliderTrack.style.width = sizePercents[size];
+
+      scaleStops.forEach(s => {
+        const dot = s.querySelector('span:first-child');
+        const text = s.querySelector('span:last-child');
+        dot.className = 'w-3.5 h-3.5 rounded-full bg-surface-container group-hover:bg-secondary-fixed transition-colors';
+        text.className = 'font-label text-[11px] text-on-surface-variant';
+      });
+
+      const activeDot = stop.querySelector('span:first-child');
+      const activeText = stop.querySelector('span:last-child');
+      activeDot.className = 'w-3.5 h-3.5 rounded-full bg-secondary shadow-[0_0_0_3px_#F4E3DA] transition-colors';
+      activeText.className = 'font-label text-[11px] font-semibold text-secondary';
+
+      specimenText.style.fontSize = `${size}px`;
+      specimenText.style.lineHeight = `${Math.round(currentSize * currentRhythm)}px`;
+      scaleIndicator.textContent = `${size} px · ${size === '18' ? 'Standard' : (size === '14' ? 'Compact' : 'Comfort')}`;
+      previewTypeChip.textContent = `${currentFont} · ${size}px`;
+    });
+  });
+
+  const rhythmButtons = document.querySelectorAll('.rhythm-btn');
+  rhythmButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const val = parseFloat(btn.getAttribute('data-rhythm'));
+      currentRhythm = val;
+
+      rhythmButtons.forEach(b => {
+        b.className = 'rhythm-btn py-2 px-1 rounded-lg text-center font-label text-xs font-medium text-on-surface-variant hover:text-on-surface transition-all';
+      });
+
+      btn.className = 'rhythm-btn py-2 px-1 rounded-lg text-center font-label text-xs font-semibold bg-secondary text-on-secondary shadow-xs transition-all';
+      specimenText.style.lineHeight = `${Math.round(currentSize * currentRhythm)}px`;
+    });
+  });
+
+  const gutterButtons = document.querySelectorAll('.gutter-btn');
+  gutterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const gutter = btn.getAttribute('data-gutter');
+      gutterButtons.forEach(b => {
+        b.className = 'gutter-btn py-2 px-2 rounded-lg text-center font-label text-xs font-medium text-on-surface-variant hover:text-on-surface transition-all';
+      });
+      btn.className = 'gutter-btn py-2 px-2 rounded-lg text-center font-label text-xs font-semibold bg-secondary text-on-secondary shadow-xs transition-all';
+
+      if (gutter === 'compact') {
+        specimenCard.style.padding = '12px 14px';
+      } else if (gutter === 'standard') {
+        specimenCard.style.padding = '20px';
+      } else {
+        specimenCard.style.padding = '24px 28px';
+      }
+    });
+  });
+
+  const resetBtn = document.getElementById('reset-btn');
+  resetBtn.addEventListener('click', () => {
+    pigmentButtons[0].click();
+    typeButtons[0].click();
+    scaleStops[1].click();
+    rhythmButtons[1].click();
+    gutterButtons[1].click();
+  });
+
+  const saveBtn = document.getElementById('save-btn');
+  saveBtn.addEventListener('click', () => {
+    const originalText = saveBtn.innerHTML;
+    saveBtn.innerHTML = `<span class="material-symbols-outlined text-[18px]">check_circle</span><span>Profile Applied</span>`;
+    saveBtn.classList.add('bg-primary');
+    setTimeout(() => {
+      saveBtn.innerHTML = originalText;
+      saveBtn.classList.remove('bg-primary');
+    }, 1800);
+  });
+})();
+</script></main><nav class="fixed bottom-0 left-0 right-0 z-50 pb-safe bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-1px_0_rgba(230,225,216,0.8),0_-2px_12px_rgba(31,29,26,0.03)]" data-active-classes="text-secondary"><div class="flex justify-around items-center h-16 px-1"><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="library" href="#"><span class="material-symbols-outlined">auto_stories</span><span class="font-label text-[10px] font-medium tracking-tight">Library</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="reading" href="#"><span class="material-symbols-outlined">menu_book</span><span class="font-label text-[10px] font-medium tracking-tight">Reading</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="notes" href="#"><span class="material-symbols-outlined">edit_note</span><span class="font-label text-[10px] font-medium tracking-tight">Notes</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="shelves" href="#"><span class="material-symbols-outlined">shelves</span><span class="font-label text-[10px] font-medium tracking-tight">Shelves</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-secondary" data-path="settings" href="#"><div class="px-3.5 py-1 rounded-full bg-[#F4E3DA] flex items-center justify-center"><span class="material-symbols-outlined text-secondary font-medium">settings</span></div><span class="font-label text-[10px] font-semibold tracking-tight text-secondary">Settings</span></a></div></nav></body></html>
